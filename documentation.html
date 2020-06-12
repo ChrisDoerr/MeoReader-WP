@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+ <head>
+  <title>meoReader Documentation</title>
+  <link rel="stylesheet" type="text/css" href="./css/meoDocs.css" />
+  <style type="text/css">
+html, body {
+  background-color: #FAFAFA;
+}
+.meoDocs_clear {
+  clear:  both;
+  height: 0;
+  content: '';
+  line-height:  0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
+@media screen {
+
+  #meoDocs {
+    min-width:    800px;
+    max-width:    1024px;
+    margin:   0 auto;
+    padding:  1em 2em;
+    box-shadow: 0px 2px 5px #444;
+    background-color: #FFF;
+  }
+
+}
+@media print {
+  object {
+    display:      none;
+  }
+}
+
+#meoDocs_header {
+  border-bottom:  1px solid #000;
+  margin-bottom:  1em;
+}
+#meoDocs h1 {
+  float:  left;
+  font-weight:  normal;
+  font-size:    2em;
+  display:  inline-block;
+  margin-bottom:  10px;
+}
+#meoDocs h1 span {
+  background-color: #000;
+  color:  #FFF;
+  padding: 0 10px 5px;
+  margin-right: 0.25em;
+}
+#meoDocs h2 {
+  float:  right;
+  display:  inline-block;
+  margin-bottom:  10px;
+}
+.meoDocs_inPageChapter {
+  height: 0;
+  line-height: 0;
+  font: 0/0 a;
+}
+  </style>
+ </head>
+ <body>
+  <!--[meoDocs:Start]-->
+  <div id="meoDocs">
+   
+   <!--^-->
+   <div id="meoDocs_header">
+    <h1><span>&#187;</span>meo<strong>Reader</strong></h1>
+    <h2>Documentation [EN]</h2>
+    <div class="meoDocs_clear">&nbsp;</div>
+   </div>
+   <!--^-->
+  
+   <div id="meoDocs_TableOfContents">
+    <ul>
+     <li><span class="meoDocs_chapter_nr">1</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_1_0">Introduction</a></span>
+      <ul>
+       <li><span class="meoDocs_chapter_nr">1.1</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_1_1">Disclaimer</a></span></li>
+       <li><span class="meoDocs_chapter_nr">1.2</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_1_2">System Requirements</a></span></li>
+       <li><span class="meoDocs_chapter_nr">1.3</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_1_3">Core Concept</a></span></li>
+       <li><span class="meoDocs_chapter_nr">1.4</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_1_4">Installation</a></span></li>
+       <li><span class="meoDocs_chapter_nr">1.5</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_1_5">Updates</a></span></li>
+      </ul>
+     </li>
+     <li><span class="meoDocs_chapter_nr">2</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_2_0">Settings</a></span></li>
+     <li><span class="meoDocs_chapter_nr">3</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_0">Subscriptions</a></span>
+      <ul>
+       <li><span class="meoDocs_chapter_nr">3.1</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_1">Category - Add</a></span>
+       <li><span class="meoDocs_chapter_nr">3.2</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_2">Category - Delete</a></span>
+       <li><span class="meoDocs_chapter_nr">3.3</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_3">Category - Rename</a></span>
+       <li><span class="meoDocs_chapter_nr">3.4</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_4">Feed - Add</a></span>
+       <li><span class="meoDocs_chapter_nr">3.5</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_5">Feed - Delete</a></span>
+       <li><span class="meoDocs_chapter_nr">3.6</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_6">Feed - Check</a></span>
+       <li><span class="meoDocs_chapter_nr">3.7</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_7">Feed - Move to Another Category</a></span>
+       <li><span class="meoDocs_chapter_nr">3.8</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_8">Export meoReader Data</a></span>
+       <li><span class="meoDocs_chapter_nr">3.9</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_9">Import meoReader Data</a></span>
+       <li><span class="meoDocs_chapter_nr">3.10</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_10">Import Google Reader Data</a></span>
+       <li><span class="meoDocs_chapter_nr">3.11</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_3_11">Import/Export OPML Files</a></span>
+      </ul>
+     </li>
+     <li><span class="meoDocs_chapter_nr">4</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_0">The Reader</a></span>
+      <ul>
+       <li><span class="meoDocs_chapter_nr">4.1</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_1">Reading Entries</a></span>
+       <li><span class="meoDocs_chapter_nr">4.2</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_2">Content Placeholders</a></span>
+       <li><span class="meoDocs_chapter_nr">4.3</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_3">Add Entry to Archive</a></span>
+       <li><span class="meoDocs_chapter_nr">4.4</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_4">Refresh Feeds</a></span>
+       <li><span class="meoDocs_chapter_nr">4.5</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_5">Filter By Category</a></span>
+       <li><span class="meoDocs_chapter_nr">4.6</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_6">Mark All As Read</a></span>
+       <li><span class="meoDocs_chapter_nr">4.7</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_7">Toogle Single Item Read/Unread</a></span>
+       <li><span class="meoDocs_chapter_nr">4.8</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_8">Only Show Today's Entries</a></span>
+       <li><span class="meoDocs_chapter_nr">4.9</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_9">Search Entries</a></span>
+       <li><span class="meoDocs_chapter_nr">4.10</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_4_10">Keyboard Shortcuts</a></span>
+      </ul>
+     </li>
+     <li><span class="meoDocs_chapter_nr">5</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_5_0">The Archive</a></span>
+      <ul>
+       <li><span class="meoDocs_chapter_nr">5.1</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_5_1">Remove From Archive</a></span>
+      </ul>
+     </li>
+     <li><span class="meoDocs_chapter_nr">6</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_6_0">FAQ</a></span></li>
+     <li><span class="meoDocs_chapter_nr">7</span> <span class="meoDocs_chapter_name"><a href="#meoDocs_chapter_7_0">Contact</a></span></li>
+    </ul>
+   </div><!-- end #meoDocs_TableOfContents -->
+  
+   <div id="meoDocs_Content">
+
+<h3 id="meoDocs_chapter_1_0">Introduction</h3>
+<p>Thanks for choosing the meoReader. The following documentation will tell you more about how to use the plugin, what each option, button or action link is for and how easy it actually is to use the meoReader.</p>
+<p>In case you're more of a visual person there is also a <a href="http://www.youtube.com/watch?v=J_FdmDLYpbk" target="_blank">12 minute walk through</a> video that should get you started pretty good.</p>
+
+<p>And please also check out the more detailed <strong>changelog</strong> about new features and bug fixes at <a href="http://www.meomundo.com/products/meoreader/" target="_blank">Meomundo.com</a>.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_1_1">&nbsp;</a></p>
+<h4>Disclaimer</h4>
+
+<p>When considering to use the meoReader, or actually any other self-hosted RSS feed reading application for that matter, keep something in mind: The meoReader is not the Google Reader!</p>
+<p>It's gonna be your server that might become a bottleneck when you're subscribing to too many feeds. Not so much in terms of disk or database space but when you're trying to update all these feeds.</p>
+<p>You might run into PHP execution time problems (which is limited by your php.ini settings), especially when you don't have Javascript enabled in your browser. In PHP it's simply not possible to have multiple threads. But as a workaround you can use Javascript/Ajax to split the task of updating all feeds at once into updating one feed after another. But it will still take more time than simply checking your Google Reader (where everything has nicely been timed, cached and pre-processed for you).</p>
+<p>And even though there are standards for how RSS feeds should be build, there are a thousand things that can go wrong when generating and then providing such a feed. Some will be unintentionally and  others will be by choice! Yes, feed provides come up with all kinds of reasons why they think they have to break the standard.</p>
+<p>The thing is, it doesn't even matter why a feed appears to be broken. At best it's only going to be harder but in the worst case simply impossible to handle that feed!</p>
+<p>So please make sure the feed you want to subscribe to but cannot isn't broken in itself. And if it is, please contact the feed provider first. It should be in his/her own interest to offer feeds that can processed by other applications without causing any trouble - which kind of is the reason RSS was invented...</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_1_2">&nbsp;</a></p>
+<h4>System Requirements</h4>
+
+<ul>
+ <li>WordPress 3.0+</li>
+ <li>PHP 5.2.0+</li>
+ <li>jQuery 1.4.3+ (a more up to date version is being provided by WP3 anyway)</li>
+</ul>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_1_3">&nbsp;</a></p>
+<h4>Core Concept</h4>
+
+<p>The meoReader plugin basically uses the following four sections that in total make up the WordPress embedded RSS feed reader.</p>
+
+<ol>
+ <li>The plugin settings page.</li>
+ <li>The Subscriptions page  - to manage and organize feeds and categories.</li>
+ <li>The Reader page - to do the actual reading plus maintain your entries.</li>
+ <li>The Archive page - to store entries of interest.</li>
+</ol>
+
+<p>Typically, when you've installed and set up the plugin you would go the subscriptions page and create some categories and then manually add some RSS feeds or import some data sets.</p>
+<p>Then a typical day-to-day workflow could look like this:</p>
+
+<ol>
+ <li>The reader page: Refresh the feeds to get new entries.</li>
+ <li>The reader page: Read the entries that sound interesting to you (maybe download some attached media files).</li>
+ <li>Add some entries to the archive.</li>
+ <li>When you're done with your reading session, mark all (other) entries as read.</li>
+</ol>
+
+<p>And every now and then you should export your data to keep a backup of your current subscriptions (categories and feeds). This can be done on the subscriptions page.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_1_4">&nbsp;</a></p>
+<h4>Installation</h4>
+
+<p>Before you start make sure you have downloaded the plugin ZIP file (which will be named something like "meoReader-1.0.0.zip") and have saved it to your local computer.</p>
+<p>Then log into your WordPress backend as an administrator and select "Plugins / Add New" from the main menu. Now click the "upload" link at the top of the page, choose the plugin ZIP file from your local machine and click the "Install Now" button.</p>
+<p>Depending on your internet connection this might take a moment. But when you see the message "Successfully installed the plugin meoReader" click the "Activate Plugin" link - and that's it.</p>
+<p>The plugin is now installed and you can see that a new main item, "meoReader", has been added to menu.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_1_5">&nbsp;</a></p>
+<h4>Updates</h4>
+
+<p>This plugin will be updated every now and then. Bugs will be fixed and new, requested features might be implemented.</p>
+
+<h5>General Approach</h5>
+
+<p>No matter if you update the plugin manually or by using the auto-update service you should always follow these three steps:</p>
+
+<ol>
+ <li>Deactive the meoReader in your WordPress backend.</li>
+ <li>Only then update the plugin.</li>
+ <li>Activate the meoReader again!</li>
+</ol>
+
+<p>WordPress only runs certain update operations (file operations and database structure updates, for example) only when re-activating a plugin. So these 3 little steps are crucial!</p>
+
+<h5>Manually via CodeCanyon</h5>
+
+<p>To update the meoReader plugin you log into your CodeCanyon account and download the latest ZIP archive which you have to unpack to some location on your local computer.</p>
+<p>Log into your WordPress backend as an administrator, go the plugins menu and deactivate the meoReader.</p>
+<p>Then start an FTP client of your choice and upload the complete /meoReader/ folder that you just extracted to your server, into the directory /wp-content/plugins/</p>
+<p>Now activate the meoReader again in the WordPress backend and you should be done.</p>
+<p>You can check if everything went okay by going to the menu plugins/installed plugins. You should see that the version number has changed!</p>
+
+<h5>Automatic Updates</h5>
+
+<p>The meoReader also offers automatic updating. So if you log into the WordPress backend as an administrator you will see a notification if there is a newer version of this plugin available. Simply go to the plugin menu then and you will see a message, "There is a new version of meoReader available", at the bottom of the plugin row.</p>
+<p>There are also two links available: "View Version Details" - which will open a little popup with further information about the new version - and "update now".</p>
+<p>Click "update now" and after confirming the action the new version will be automatically downloaded and installed.</p>
+<p>Depending on the server connections this might take a bit. WordPress is giving you little progress messages which in my experience can be a little bit misleading. So please be patient and wait until the message "Plugin re-activated" appears. Then, and only then is the update complete!</p>
+<p>If you leave this page too early the installation might break and even damage the plugin.</p>
+<p>But even if that has happened, it's not the end of the world. But you would have to install the update manually then since you have to overwrite possibly incomplete files.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_2_0">&nbsp;</a></p>
+<h3>Settings</h3>
+
+<p>The plugin settings can be found as sub menu item of the "meoReader" menu (/meoReader/Settings/.</p>
+
+<h4>Entries per page</h4>
+
+<p>The number of entries that will be shown in the reader as well as the archive on a single page.</p>
+<p>If there are more entries than that you will find links to pages of older and newer entries (prev/next navigation) at the bottom of the page, below the entry block.</p>
+
+<h4>Delete entries older than</h4>
+
+<p>It is not a good idea to store entries forever if you want to keep your database clean, fast and responsive. With this setting you can specify the number of days you do want to keep them (always counting backwards from today). Entries that are older than that will automatically be deleted on a regular basis. Also, when you update feeds or add new ones, incoming entries that are too old (according to this setting) will not even be saved to begin with.</p>
+
+<h4>Timeout</h4>
+
+<p>This is a tricky one. When adding or refreshing a feed, its URL will be loaded in order to get the latest version of the RSS feed. And loading an external source takes time. It's quite possible that the server that's being contacted takes too long to generate an answer or that this server is even down (permanently or temporarily).</p>
+<p>If you have more than one feed you're subscribing to you don't want to wait forever for a server sending a response, as this might sum up to a pretty long time. Instead, you would want to wait only a certain amount of time (set the number of seconds you're willing to wait here) and then move on to reading or refreshing the next feed.</p>
+<p>But there is another limitation and it is due to your server settings: the PHP execution time. If a script (or a PHP application as a whole) takes more than that time (also in seconds), PHP will simply stop (or "die") and produce a hard error.</p>
+<p>So the timeout value you set here always has to be at least one below this PHP maximum execution time. There is footnote for this option that will show you your current server setting! If it turns out that this is not enough (meaning, you cannot load feeds within that timeframe) you either have to change your PHP.ini file yourself or contact your hosting company so they can do that for you.</p>
+
+<h4>Allow Single User</h4>
+
+<p>If you want to read your RSS feeds sitting in a public place like a Cafe or park you should be aware that the local networks there might not be the most secure ones. It's also possible that other people might simply see you typing your password when you log into WordPress.</p>
+<p>Therefore it is recommended to select a single user from the list here -which you might have to create beforehand- that at best is only a "subscriber" but in any case should not have any admin rights! If you log into the backend as this user you can refresh your feeds, read your entries, even move them to the archive and back, but cannot manage your subscriptions. This restriction makes it at least a little bit more secure surfing in public networks.</p>
+
+<h4>Auto-publish all entries as blog posts.</h4>
+
+<p>If this option is checked all new entries will automatically be published as WordPress blog posts. Make sure you have the original author or publisher's permission to do that. And also be aware that there is certain risk when auto-publishing third-party code/content. It <i>might</i> break your design or worse, contain mal code.</p>
+
+<p>Each auto-published post will get a unique ID that's being stored in the post meta data. This way no duplicate posts should be created even, for example, when you're deleting a feed and after a while add it again.</p>
+
+<h4>Allow Google Reader Import</h4>
+
+<p>Google has a service called "Takeout" that lets you download all kinds of data from your Google account. And if you go to the Google Reader section (<a href="https://www.google.com/takeout/?pli=1#custom:reader">https://www.google.com/takeout/</a>) you can download a ZIP archive that will contain your subscription data.</p>
+<p>This ZIP file can be imported into the meoReader where your categories and feed subscriptions will then be added.</p>
+<p>But since you might only import that data once (or at least not too many time, I guess) you can hide this import form on the subscriptions page by unchecking this setting. And of course by checking the checkbox again you can always bring it back whenever you want to.</p>
+
+<p>Importing data from a ZIP file requires PHP to have a ZIP module enabled. If that is not the case you will not be able to import your Google Reader data. Instead you will see a message telling you to enable this module. You might have to ask your host to do that for you.</p>
+
+<h4>Use http://anonym.to service for outgoing links</h4>
+
+<p>By using this redirect service you can anonymize your referrer for outgoing links in the Reader. Meaning, the sites you're about to go to can still identify you, respectively your IP address or certain browser settings but will not know where you're coming from.</p>
+
+<p>For even more anonymous surfing you would have to go through a proxy server or a VPN tunnel of some kind.</p>
+
+<h4>Show audio player for attached audio files</h4>
+
+<p>Say you've subscribed to the RSS feed of an audio podcast. If take a look at the content of an entry (or episode) you will see the link to the "attached" media file at the bottom of the content area. If you check this setting and run what would be considered a "modern" browser an instance of the HTML5 audio player, audio.js, will be shown so you can listen to this media file right here, in your browser.</p>
+
+<p><a href="http://kolber.github.io/audiojs/" target="_blank">Audio.js</a> is a free third-party application by Anthony Kolber and is released under the <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License</a>.</p>
+
+<p>Though this player is said to be working with all modern browsers I've had some trouble when loading it in IE. So if you're also using IE and experience the same difficulties you might uncheck this option!</p>
+
+<p>Also, when you click the play button of the player you have to be a little bit pacient. The way I set it up no audio file is being preloaded and therefore it takes a few seconds until there is enough initial audio until the player will start.
+</p>
+
+<h4>Secure HTML output against certain XSS attack vectors</h4>
+
+<p>If checked, output like tiles and contents of each entry will be checked and certain potentially unsecure code 
+will be removed. This will now be handled by the <a href="http://htmlpurifier.org//" target="_blanke">HTMLPurifier</a> library.</p>
+
+<p>Needles to say that this a security feature that makes sense but also take it's time, especially when you have lots of entries per page. And in some cases content will be stripped out that should have stayed in - but that's pretty rare.</p>
+
+<h4>CronJob URL</h4>
+
+<p>If you want to run the feed updates automatically, e.g. by creating a cronjob on your server, this is the URL you should target. make sure the <strong>?token={someToken}</strong> URL parameter is added! Otherwise it won't work.</p>
+<p>There are certain risks of running such an auto-update. For example, if all goes wrong (and none of the error handlers can catch it) the cron.php script might run in an endless loop! And since you're most likely not there to stop it in time,
+it can block quite some server resources (CPU and RAM).</p>
+<p>You should also be aware of when to schedule the cronjob. My advice: Running it every 6 or even 12 hours is usually enough. Plus you want to choose a time with your lowest website traffic (so it won't slow your server down), e.g. 5am/5pm.</p>
+
+<h4>Save Changes</h4>
+
+<p>When you are done editing the plugin settings remember to click the "Save Changes" button. You will then get a message if the settings could be changed or not (in case there was a technical error).</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_0">&nbsp;</a></p>
+<h3>Subscriptions</h3>
+
+<p>You can find the "Subscriptions" page as sub item of the "meoReader" menu in the WordPress backend. Here you can manage your subscriptions, respectively your RSS feeds and organize them in categories.</p>
+
+<h4>Categories</h4>
+
+<p>Categories are optional but pretty handy so you can group RSS feeds that typically share a common topic or a common source. Basically you can add as many categories as you like and also rename and delete them according to your needs. There is one category though that is a little bit different:</p>
+
+<h4>The default category</h4>
+
+<p>When you install the meoReader plugin a category called "Unsorted" will be created. This is going to be the default category that might be renamed (as long as the name is not taken by another one) but cannot be deleted! Each feed that is not assigned to any other (valid) category will be listed here. You can still see what the default category is even after you have renamed it since it will always have a violet border, unlike the others.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_1">&nbsp;</a></p>
+<h4>Category - Add</h4>
+
+<p>To add a category use the form at the bottom of the page, below the categories block. Simply enter the name into the input field and hit the "Add Category" button, right next to it. If the name is not taken by an existing category the new category will be created.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_2">&nbsp;</a></p>
+<h4>Category - Delete</h4>
+
+<p>To delete a category click the link on the right side of a category's bar. You will then be asked to confirm your request, just to be sure you haven't clicked this action by mistake.</p>
+<p>When you delete a category the feeds that are currently assigned to it will not be lost! They will be moved to the default category instead.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_3">&nbsp;</a></p>
+<h4>Category - Rename</h4>
+
+<p>There are two ways to rename a category: You can either click the "rename" action link on the right side of a category's bar or simply double-click the category name. In both cases, a text input field will appear and you can edit the name. In order to actually rename the category after you've changed the name, simply hit the RETURN key. If you decide you don't want to rename it any more, simply hit the ESCAPE key and the action will be discarded.</p>
+<p>If the new name is already being used by another category you will get an error message that will tell you so. It is not possible to use the same name twice. And also, category names are not case-sensitive when it comes to checking the uniqueness!</p>
+
+<h4>Feeds</h4>
+
+<p>The meoReader handles RSS as well as atom feeds. And though technically these are two different standards, when it comes to terminology they might use interchangeably throughout the documentation. So "RSS feed" usually means "atom feed" as well and vice versa.</p>
+<p>A feed's title and the action links are aligned in the same row, so to speak. The background color of this row will turn into a dark grey so can always be sure you are about click the right action link for the right feed.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_4">&nbsp;</a></p>
+<h4>Feed - Add</h4>
+
+<p>To add an RSS feed use the form at the top of the subscriptions page. Enter the URL into the text input field, select a category this feed should be assigned to from the drop-down list right next to it, and then click the "Add Feed" button.</p>
+<p>If the URL is valid and the feed can be reached it will be loaded immediately. Some meta data like the feed title and the URL of the website this feed belongs to will then be extracted and the feed will be added to your database. Also, the entries of that feed will be added - as long as they're not older than what you have specified in the plugin settings.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_5">&nbsp;</a></p>
+<h4>Feed - Delete</h4>
+
+<p>To delete a feed along with all its entries(!), simply click the "delete" action link on the far right of the feeds name.</p>
+<p>When you click a delete link you will be asked to confirm your action just to be sure you haven't clicked that link by mistake.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_6">&nbsp;</a></p>
+<h4>Feed - Check</h4>
+
+<p>When you suspect that a feed is not loading correctly or you just want to know how the meoReader dissects a feed you can click the "check" link on the far right of the feed name.</p>
+<p>You will see if and how each entry is being detected, along with its meta data, and if an entry has already been added to the database or not (in which case you will see a message if that's because of your "older than" setting).</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_7">&nbsp;</a></p>
+<h4>Feed - Move</h4>
+
+<p>Feeds are always assigned to one (and only one) category, even if it's only the default category. If you want to move a feed to another category, click the "move" action link on the far right of the feeds name. You will then be asked to select the new category which you have to choose from the drop-down list. You can still discard the action at this point or actually move the feed by clicking the corresponding button.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_8">&nbsp;</a></p>
+<h4>Export meoReader Data</h4>
+
+<p>Below your subscriptions block is a link that, when clicked, will generate and lets you download an XML file containing all your categories and feeds you subscribe to. Though the XML format is a proprietary one it is pretty simple to understand. Anyway, this XML file can be imported back into (or any other installation of) the meoReader plugin.</p>
+<p>The export function might be handy in case you want to move that data or, even more important, to make backups every now and then!</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_9">&nbsp;</a></p>
+<h4>Import meoReader Data</h4>
+
+<p>Here you can select a meoReader export (XML) file and import that data again. When you import data sets into the meoReader existing data will not be deleted! So when you want to make a "hard update" you have to manually delete these items before you start importing "new" one.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_10">&nbsp;</a></p>
+<h4>Import Google Reader Data</h4>
+
+<p>Google has a service called "Takeout" that lets you download all kinds of data from your Google account. And if you go to the Google Reader section (https://www.google.com/takeout/?pli=1#custom:reader) you can download a ZIP archive file that will contain your subscription data.</p>
+<p>This ZIP file can be imported into the meoReader where your categories and feed subscriptions will then be added.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_3_11">&nbsp;</a></p>
+<h4>Import/Export OPML Files</h4>
+
+<p>You can also import and export a list of feeds and their categories by using data in the OPML format.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_0">&nbsp;</a></p>
+<h3>The Reader</h3>
+
+<p>"The reader" is the page that shows you a list of entries, sorted by date (from new to old) that can be found in the WordPress backend under the main menu item "meoReader". While the "subscriptions" page is for managing and organizing your feeds the reader is the place for actually reading the content.</p>
+<p>The reader page is basically made out of two sections. At the top of the page is a toolbar where a bunch of action buttons are located that will influence what entries will be listed below.</p>
+<p>The second section is "the entries list" that allows you to read the content. Entries are listed one in a row and will show you (from left to right) the [A] icon to move an entry to the archive, the feed name this entry belongs to, the entry title, and the date of the entry (according to the RSS feed!)</p>
+<p>Unread entry rows have a white background and their text is written in bold letters while items that have been read will have a grey background color and normal weighted text.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_1">&nbsp;</a></p>
+<h4>Reading Entries</h4>
+
+<p>To read the content of an entry, single-click the entry row wherever you want and the full content will then be shown. And the moment you click an unread entry it will also change its status to "read".</p>
+<p>If you want to read another entry just click that new entry row. This will close the current content and open the new one so that the reader page won't grow to an unacceptable length.</p>
+<p>Sometimes, entries can have links to certain kinds of media files attached. In case of a podcasting RSS this might be the link to one or more audio files, for example. These media file links will be listed beneath an entry's content, in a dark grey box. When you hover such a link with your mouse, a tooltip will appear and show you the full URL of this file.</p>
+<p>Some media types will also be hinted by showing related icons in front of the filename, like a little speaker icon when it's an audio file.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_2">&nbsp;</a></p>
+<h4>Content Placeholders</h4>
+
+<p>The content of an entry might contain things like "iframes" or certain kinds of embedded objects. Normally, loading these things would cause the rest of the page to stop loading until these external contents have been fully loaded first. And depending on the number of entries you have set up to be shown on one page (e.g. 30) this would result in you having to wait way too long just so you can see the list of entries.</p>
+<p>To prevent this annoying behavior from happening elements like iframes will be filtered out of the content. But they are not lost, of course. If the content of an entry contains such elements you will see placeholders with a neon-yellowish background color. When you explicitly want to load the content a placeholder holds back you simply have to left-click them.</p>
+<p>This approach might not be ideal but it turned out to be the best compromise when it comes to loading numerous entries to build the reader list.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_3">&nbsp;</a></p>
+<h4>Add Entry To Archive</h4>
+
+<p>Entries will be located either in the reader or in the archive, never in both places at the same time. The archive is the place to store entries you like to keep. Hopefully because they are interesting to read but also to keep them even when they are older than what you have specified in the plugin settings. Archive entries - opposed to reader entries - will not be deleted if they are older than that!</p>
+<p>To move an entry from the reader to the archive click the [A] icon at the very left in an entry's row. It then will disappear from the reader list but show up in the archive list.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_4">&nbsp;</a></p>
+<h4>Refresh Feeds</h4>
+
+<p>To get the latest entries of all the feeds you subscribe to, click the "Refresh" button in the toolbar at the top of the page. This might take a while depending on how many feeds you subscribe to!</p>
+<p>When you start the updating/refreshing process a box pops up that shows you what feed is currently being refreshed and how many feeds have already being updated (e.g. 3 of 32). When all feeds have been refreshed the reader will automatically update the entry list.</p>
+<p>If some feeds could not be reached or updated for whatever reason you will be shown a list of those feeds. You then might check the feed URLs by yourself and see if this was only a temporary problem or, for example, if the feed URL has changed (in which case you would have to delete the old feed and add the new feed URL on the subscriptions page).</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_5">&nbsp;</a></p>
+<h4>Filter by Category</h4>
+
+<p>If you have created categories other than the default one you can select a single category from a drop-down list in the toolbar. If you do that, only entries of those feeds that are assigned to that category will be shown.</p>
+<p>You can also select "All Categories" which then will show you (who would have thought) all entries, no matter what.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_6">&nbsp;</a></p>
+<h4>Mark All As Read</h4>
+
+<p>When you click this button in the toolbar, all entries will be marked as read and the entry list will be updated when it's done. This can be very handy if you have read the entries that seemed interesting to you and you don't want to check the other items again the next time you refresh the feeds.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_7">&nbsp;</a></p>
+<h4>Toggle Read/Unread Status of single entries</h4>
+
+<p>When you click the little [R] icon left next to a feed name you can toggle a single item's status from <i>read</i> to <i>unread</i> and vice versa.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_8">&nbsp;</a></p>
+<h4>Only show today's entries</h4>
+
+<p>By clicking the "Today" button in the toolbar at the top of the Reader page only today's entries will be displayed.</p>
+<p>The button then changes from "Today" to "All Time". So when you hit it again all entries of all time will be displayed again.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_9">&nbsp;</a></p>
+<h4>Search Entries</h4>
+
+<p>At the top of the reader, in the toolbar, there is also a search box that allows you to search all entries, from the reader as well as the archive, or more precisely, their titles and their contents.</p>
+<p>If search results could be found a list of those entries will be shown, just like you're used to in the reader or the archive. You can click entries to show the content and close it by clicking again (or another item).</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_4_10">&nbsp;</a></p>
+<h4>Keyboard Shortcuts</h4>
+<table>
+ <tr>
+  <th style="text-align:left;">Key</th>
+  <th style="text-align:left;">Action</th>
+ </tr>
+ <tr>
+  <td>NUM PAD [+]<br />or SPACE</td>
+  <td>Select and open the next entry.</td>
+ </tr>
+ <tr>
+  <td>NUM PAD [-]</td>
+  <td>Select and open the previous entry.</td>
+ </tr>
+ <tr>
+  <td>j</td>
+  <td>Select the next entry.</td>
+ </tr>
+ <tr>
+  <td>k</td>
+  <td>Select the previous entry</td>
+ </tr>
+ <tr>
+  <td>o</td>
+  <td>Open/Close entry (expand/collapse) the content of the current entry.</td>
+ </tr>
+ <tr>
+  <td>r</td>
+  <td>Toggle unread/read state of the current entry.</td>
+ </tr>
+ <tr>
+  <td>R</td>
+  <td>Mark all items as read.</td>
+ </tr>
+ <tr>
+  <td>a</td>
+  <td>Move the current entry to the archive or from the archive back to the Reader.</td>
+ </tr>
+ <tr>
+  <td>t</td>
+  <td>Either only show TODAY's entries or all entries of ALL TIME.</td>
+ </tr>
+ <tr>
+  <td>u</td>
+  <td>Refresh/Update feeds.</td>
+ </tr>
+ <tr>
+  <td>ESCAPE</td>
+  <td>Abort refresh/update process.</td>
+ </tr>
+</table>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_5_0">&nbsp;</a></p>
+<h3>The Archive</h3>
+
+<p>The archive lets you store entries you want to keep for whatever reason and that will not be deleted, no matter if they are older than what you have set on the plugin's setting page.</p>
+<p>Reading entries here is just like on the reader page. You once click an entry to show and then read its content. You click again or another entry and the current content will close (and the new one might open up).</p>
+<p>Even though you most probably will not have as many entries in the archive as you will in the reader, the concept of placeholders also applies here: In case the content of an entry contains iframes or certain embedded objects, placeholders will be shown instead. This prevents the page from having to wait until all those external contents will be loaded before you can even see the archive page. To show (and therefore load) that elements you have to left-click the placeholders.</p>
+<p>Another difference to the reader is that you don't have a complete toolbar here. Operations like refreshing feeds etc. have to be done in the reader. You can still search all(!) entries though.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_5_1">&nbsp;</a></p>
+<h4>Remove From Archive</h4>
+
+<p>If you want to remove an entry from the archive (and therefore move it back to the reader) you have to click the [A] icon on the very left of an entry's row. It will then no longer be shown in the archive. Instead it will appear in the reader.</p>
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_6_0">&nbsp;</a></p>
+<h3>FAQ</h3>
+
+<h4>I've added an RSS feed.  Why is the content not showing up in the Reader?</h4>
+<p>[A] The content might be older than what you have specified in the plugin settings (under "Settings / meoReader"). Entries that are "too old" will be deleted, respectively not saved to the database in the first place.</p>
+<p>
+ [B] The feed itself is not valid (according the RSS standard) or even broken, or the feed URL does not point to an XML file - though the website might still return "something readable". If you suspect something might not be working properly please <strong>go to the subscriptions page and click the "check" link</strong> for this RSS feed. You will then see how the meoReader interprets the feed and it will show you potential problems.
+</p>
+<p>
+If no error is being reported when checking a feed and the problem still remains, feel free to contact me.<br />
+But if it turns out that the feed is broken, invalid or something alike, please <strong>contact the feed provider</strong> and ask him/her (politely) to fix it.
+</p>
+
+
+<p class="meoDocs_inPageChapter"><a id="meoDocs_chapter_7_0">&nbsp;</a></p>
+<h3>Contact</h3>
+
+<p>You can leave your feedback, or questions, or make suggestions in the comments on the plugin page or on <a href="http://www.meomundo.com/">meomundo.com</a></p>
+
+    <!--[%pluginURL%]-->
+    
+   </div><!-- end #meoDocs_Content -->
+   
+   <div class="meoDocs_clearAll">&nbsp;</div>
+  
+  </div><!-- end #meoDocs -->
+  <!--[meoDocs:End]-->
+
+ </body>
+</html>

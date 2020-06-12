@@ -1,0 +1,1146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: meoReader\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-25 17:41+0100\n"
+"PO-Revision-Date: 2013-08-25 17:42+0100\n"
+"Last-Translator: \n"
+"Language-Team: meomundo.com <doerr@meomundo.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../js/MeoReader.dictionary.php:18
+msgctxt "JS MeoReader Box"
+msgid "Okay"
+msgstr "Okay"
+
+#: ../js/MeoReader.dictionary.php:19
+msgctxt "JS MeoReader Box"
+msgid "Cancel"
+msgstr "Cancel"
+
+#: ../js/MeoReader.dictionary.php:20
+msgctxt "JS MeoReader Box"
+msgid "Close"
+msgstr "Close"
+
+#: ../js/MeoReader.dictionary.php:23
+msgctxt "JS MeoReader Import"
+msgid "Importing Data"
+msgstr "Importing Data"
+
+#: ../js/MeoReader.dictionary.php:24
+msgctxt "JS MeoReader Import"
+msgid "This might take a while depending on how many feeds you have."
+msgstr "This might take a while depending on how many feeds you have."
+
+#: ../js/MeoReader.dictionary.php:25
+msgctxt "JS MeoReader Import"
+msgid "Progress"
+msgstr "Progress"
+
+#: ../js/MeoReader.dictionary.php:26
+msgctxt "JS MeoReader Import"
+msgid "of"
+msgstr "of"
+
+#: ../js/MeoReader.dictionary.php:27
+msgctxt "JS MeoReader Import"
+msgid "Abort"
+msgstr "Abort"
+
+#: ../js/MeoReader.dictionary.php:28
+msgctxt "JS MeoReader Import"
+msgid "The following feed(s) could not be added"
+msgstr "The following feed(s) could not be added"
+
+#: ../js/MeoReader.dictionary.php:31
+msgctxt "JS MeoReader Reader"
+msgid "Add to Archive"
+msgstr "Add to Archive"
+
+#: ../js/MeoReader.dictionary.php:32
+msgctxt "JS MeoReader Reader"
+msgid "No entries"
+msgstr "No entries"
+
+#: ../js/MeoReader.dictionary.php:33
+msgctxt "JS MeoReader Reader"
+msgid "Update Error"
+msgstr "Update Error"
+
+#: ../js/MeoReader.dictionary.php:34
+msgctxt "JS MeoReader Reader"
+msgid "The following feeds could not be refreshed"
+msgstr "The following feeds could not be refreshed"
+
+#: ../js/MeoReader.dictionary.php:35
+msgctxt "JS MeoReader Reader"
+msgid "Error"
+msgstr "Error"
+
+#: ../js/MeoReader.dictionary.php:36
+msgctxt "JS MeoReader Reader"
+msgid "Refreshing Feeds"
+msgstr "Refreshing Feeds"
+
+#: ../js/MeoReader.dictionary.php:37
+msgctxt "JS MeoReader Reader"
+msgid "Post has been created"
+msgstr "Post has been created"
+
+#: ../js/MeoReader.dictionary.php:38 ../lib/MeoReader/Ajax.php:1175
+#: ../lib/MeoReader/Backend/CreatePostFromEntry.php:91
+msgctxt "error message"
+msgid "Post could not be created!"
+msgstr "Post could not be created!"
+
+#: ../js/MeoReader.dictionary.php:39 ../templates/Backend/Archive.php:133
+#: ../templates/Backend/Index.php:223 ../templates/Backend/Search.php:88
+#: ../templates/Backend/ViewEntry.php:107
+msgctxt "entry toolbar"
+msgid "Create Post From Entry"
+msgstr "Create Post From Entry"
+
+#: ../js/MeoReader.dictionary.php:40 ../templates/Backend/Archive.php:138
+#: ../templates/Backend/Index.php:228 ../templates/Backend/Search.php:93
+#: ../templates/Backend/ViewEntry.php:112
+msgctxt "entry toolbar"
+msgid "Share this on Facebook"
+msgstr "Share this on Facebook"
+
+#: ../js/MeoReader.dictionary.php:41 ../templates/Backend/Archive.php:137
+#: ../templates/Backend/Index.php:227 ../templates/Backend/Search.php:92
+#: ../templates/Backend/ViewEntry.php:111
+msgctxt "entry toolbar"
+msgid "Share this on Twitter"
+msgstr "Share this on Twitter"
+
+#: ../js/MeoReader.dictionary.php:44 ../js/MeoReader.dictionary.php:45
+msgctxt "JS MeoReader Subscriptions"
+msgid "Move"
+msgstr "Move"
+
+#: ../js/MeoReader.dictionary.php:46
+msgctxt "JS MeoReader Subscriptions"
+msgid "to category"
+msgstr "to category"
+
+#: ../js/MeoReader.dictionary.php:47
+msgctxt "JS MeoReader Subscriptions"
+msgid "Move Feed"
+msgstr "Move Feed"
+
+#: ../js/MeoReader.dictionary.php:48
+msgctxt "JS MeoReader Subscriptions"
+msgid "Confirm Deletion"
+msgstr "Confirm Deletion"
+
+#: ../js/MeoReader.dictionary.php:49
+msgctxt "JS MeoReader Subscriptions"
+msgid "Are you sure you want to delete this %type%"
+msgstr "Are you sure you want to delete this %type%"
+
+#: ../js/MeoReader.dictionary.php:50
+msgctxt "JS MeoReader Subscriptions"
+msgid "category"
+msgstr "to category"
+
+#: ../js/MeoReader.dictionary.php:51
+msgctxt "JS MeoReader Subscriptions"
+msgid "feed"
+msgstr "feed"
+
+#: ../js/MeoReader.dictionary.php:52
+msgctxt "JS MeoReader Subscriptions"
+msgid "Delete this category"
+msgstr "Delete this category"
+
+#: ../js/MeoReader.dictionary.php:53
+msgctxt "JS MeoReader Subscriptions"
+msgid "delete"
+msgstr "delete"
+
+#: ../js/MeoReader.dictionary.php:54
+msgctxt "JS MeoReader Subscriptions"
+msgid "check"
+msgstr "check"
+
+#: ../js/MeoReader.dictionary.php:55
+msgctxt "JS MeoReader Subscriptions"
+msgid "Yes"
+msgstr "Yes"
+
+#: ../js/MeoReader.dictionary.php:56
+msgctxt "JS MeoReader Subscriptions"
+msgid "Rename this category"
+msgstr "Rename this category"
+
+#: ../js/MeoReader.dictionary.php:57
+msgctxt "JS MeoReader Subscriptions"
+msgid "rename"
+msgstr "rename"
+
+#: ../js/MeoReader.dictionary.php:58
+msgctxt "JS MeoReader Subscriptions"
+msgid "Delete this feed"
+msgstr "Delete this feed"
+
+#: ../js/MeoReader.dictionary.php:59
+msgctxt "JS MeoReader Subscriptions"
+msgid "Move this feed into another category"
+msgstr "Move this feed into another category"
+
+#: ../js/MeoReader.dictionary.php:60
+msgctxt "JS MeoReader Subscriptions"
+msgid "move"
+msgstr "move"
+
+#: ../js/MeoReader.dictionary.php:61
+msgctxt "JS MeoReader Subscriptions"
+msgid "Currently there are no feeds assigned to that catgory"
+msgstr "Currently there are no feeds assigned to that catgory"
+
+#: ../js/MeoReader.dictionary.php:62
+msgctxt "JS MeoReader Subscriptions"
+msgid "Expand/Collapse All Categories"
+msgstr "Expand/Collapse All Categories"
+
+#: ../js/MeoReader.dictionary.php:63
+msgctxt "JS MeoReader Subscriptions"
+msgid "The feed has an invaid URL"
+msgstr "The feed has an invaid URL"
+
+#: ../js/MeoReader.dictionary.php:64
+msgctxt "JS MeoReader Subscriptions"
+msgid "Toggle Read/Unread Status"
+msgstr "Toggle Read/Unread Status"
+
+#: ../js/MeoReader.dictionary.php:65
+msgctxt "JS MeoReader Subscriptions"
+msgid "Are you sure you want to delete <strong>all categories</strong>?"
+msgstr "Are you sure you want to delete <strong>all categories</strong>?"
+
+#: ../js/MeoReader.dictionary.php:66
+msgctxt "JS MeoReader Subscriptions"
+msgid "Are you sure you want to delete <strong>all feeds</strong>?"
+msgstr "Are you sure you want to delete <strong>all feeds</strong>?"
+
+#: ../lib/MeoReader.php:114
+msgctxt "menu or page title"
+msgid "Archive"
+msgstr "Archive"
+
+#: ../lib/MeoReader.php:117
+msgctxt "menu or page title"
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+#: ../lib/MeoReader.php:120
+#, fuzzy
+msgctxt "menu or page title"
+msgid "Settings"
+msgstr "Settings"
+
+#: ../lib/MeoReader.php:123
+msgctxt "menu or page title"
+msgid "Help"
+msgstr "Help"
+
+#: ../lib/MeoReader.php:132
+msgctxt "menu or page title"
+msgid "Feed Checker"
+msgstr "Feed Checker"
+
+#: ../lib/MeoReader.php:135
+msgctxt "menu or page title"
+msgid "Rename Category"
+msgstr "Rename Category"
+
+#: ../lib/MeoReader.php:137
+msgctxt "menu or page title"
+msgid "Add Feed"
+msgstr "Add Feed"
+
+#: ../lib/MeoReader.php:139
+msgctxt "menu or page title"
+msgid "Move Feed"
+msgstr "Move Feed"
+
+#: ../lib/MeoReader.php:143
+msgctxt "menu or page title"
+msgid "View Entry"
+msgstr "View Entry"
+
+#: ../lib/MeoReader.php:145
+msgctxt "menu or page title"
+msgid "Toggle Archive Item"
+msgstr "Toggle Archive Item"
+
+#: ../lib/MeoReader.php:147
+msgctxt "menu or page title"
+msgid "Mark All As Read"
+msgstr "Mark All As Read"
+
+#: ../lib/MeoReader.php:149
+msgctxt "menu or page title"
+msgid "Reload Feeds"
+msgstr "Reload Feeds"
+
+#: ../lib/MeoReader.php:151
+msgctxt "menu or page title"
+msgid "Delete Old Entries"
+msgstr "Delete Old Entries"
+
+#: ../lib/MeoReader.php:153
+msgctxt "menu or page title"
+msgid "Search meoReader"
+msgstr "Search meoReader"
+
+#: ../lib/MeoReader.php:155
+msgctxt "menu or page title"
+msgid "Create Post From Entry"
+msgstr "Create Post From Entry"
+
+#: ../lib/MeoReader.php:502 ../lib/MeoReader/Ajax.php:122
+#: ../lib/MeoReader/Ajax.php:186 ../lib/MeoReader/Ajax.php:310
+#: ../lib/MeoReader/Ajax.php:449 ../lib/MeoReader/Ajax.php:638
+#: ../lib/MeoReader/Ajax.php:806 ../lib/MeoReader/Ajax.php:959
+#: ../lib/MeoReader/Ajax.php:1013 ../lib/MeoReader/Ajax.php:1069
+#: ../lib/MeoReader/Backend/ToggleArchive.php:70
+#: ../lib/MeoReader/Backend/ViewEntry.php:80
+msgctxt "error message"
+msgid "Missing or Invalid Parameter!"
+msgstr "Missing or Invalid Parameter!"
+
+#: ../lib/MeoReader/Ajax.php:113 ../lib/MeoReader/Ajax.php:174
+#: ../lib/MeoReader/Ajax.php:231 ../lib/MeoReader/Ajax.php:301
+#: ../lib/MeoReader/Ajax.php:360 ../lib/MeoReader/Ajax.php:387
+#: ../lib/MeoReader/Ajax.php:440 ../lib/MeoReader/Ajax.php:511
+#: ../lib/MeoReader/Ajax.php:572 ../lib/MeoReader/Ajax.php:629
+#: ../lib/MeoReader/Ajax.php:687 ../lib/MeoReader/Ajax.php:764
+#: ../lib/MeoReader/Ajax.php:797 ../lib/MeoReader/Ajax.php:850
+#: ../lib/MeoReader/Ajax.php:903 ../lib/MeoReader/Ajax.php:950
+#: ../lib/MeoReader/Ajax.php:1004 ../lib/MeoReader/Ajax.php:1060
+#: ../lib/MeoReader/Ajax.php:1126 ../lib/MeoReader/Ajax.php:1162
+#: ../lib/MeoReader/Ajax.php:1224 ../lib/MeoReader/Ajax.php:1249
+#: ../lib/MeoReader/Backend/AddFeed.php:80
+#: ../lib/MeoReader/Backend/Archive.php:71
+#: ../lib/MeoReader/Backend/CreatePostFromEntry.php:53
+#: ../lib/MeoReader/Backend/DeleteOldEntries.php:53
+#: ../lib/MeoReader/Backend/Help.php:47 ../lib/MeoReader/Backend/Index.php:101
+#: ../lib/MeoReader/Backend/MarkAllAsRead.php:53
+#: ../lib/MeoReader/Backend/moveFeed.php:73
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:71
+#: ../lib/MeoReader/Backend/RenameCategory.php:62
+#: ../lib/MeoReader/Backend/Search.php:82
+#: ../lib/MeoReader/Backend/Settings.php:57
+#: ../lib/MeoReader/Backend/Subscriptions.php:75
+#: ../lib/MeoReader/Backend/ToggleArchive.php:56
+#: ../lib/MeoReader/Backend/ViewEntry.php:66
+msgctxt "error message"
+msgid "You are not allowed to do that!"
+msgstr "You're not allowed to do that!"
+
+#: ../lib/MeoReader/Ajax.php:149 ../lib/MeoReader/Backend/AddFeed.php:146
+msgctxt "error message"
+msgid "Feed could not be added!"
+msgstr "Feed could not be added!"
+
+#: ../lib/MeoReader/Ajax.php:207 ../lib/MeoReader/Ajax.php:271
+msgctxt "error message"
+msgid "Category could not be added!"
+msgstr "Category could not be added!"
+
+#: ../lib/MeoReader/Ajax.php:331
+msgctxt "error message"
+msgid "New category name already exists!"
+msgstr "New category name already exists!"
+
+#: ../lib/MeoReader/Ajax.php:339
+msgctxt "error message"
+msgid "Category could not be renamed!"
+msgstr "Category could not be renamed!"
+
+#: ../lib/MeoReader/Ajax.php:409
+msgctxt "error message"
+msgid "Could not get category list!"
+msgstr "Could not get category list!"
+
+#: ../lib/MeoReader/Ajax.php:470
+msgctxt "error message"
+msgid "Could not move the feed!"
+msgstr "Could not move the feed!"
+
+#: ../lib/MeoReader/Ajax.php:543 ../lib/MeoReader/Ajax.php:604
+msgctxt "error message"
+msgid "Could not mark entry as READ!"
+msgstr "Could not mark entry as READ!"
+
+#: ../lib/MeoReader/Ajax.php:659
+msgctxt "error message"
+msgid "Could not mark all entries as READ!"
+msgstr "Could not mark all entries as READ!"
+
+#: ../lib/MeoReader/Ajax.php:740
+msgctxt "error message"
+msgid "Could not get list of entries!"
+msgstr "Could not get list of entries!"
+
+#: ../lib/MeoReader/Ajax.php:824
+msgctxt "error message"
+msgid "Could not toggle entry's archive state!"
+msgstr "Could not toggle entry's archive state!"
+
+#: ../lib/MeoReader/Ajax.php:861
+msgctxt "error message"
+msgid "Cannot get archive elements!"
+msgstr "Cannot get archive elements!"
+
+#: ../lib/MeoReader/Ajax.php:914
+msgctxt "error message"
+msgid "Seems like there are no feeds!"
+msgstr "Seems like there are no feeds!"
+
+#: ../lib/MeoReader/Ajax.php:1032
+msgctxt "error message"
+msgid "Could not add category!"
+msgstr "Could not add category!"
+
+#: ../lib/MeoReader/Ajax.php:1087
+msgctxt "error message"
+msgid "Could not set category as current tab!"
+msgstr "Could not set category as current tab!"
+
+#: ../lib/MeoReader/Entries.php:580 ../templates/Backend/Index.php:200
+#: ../templates/Backend/Index.php:205
+msgctxt "label"
+msgid "by"
+msgstr "by"
+
+#: ../lib/MeoReader/Feeds.php:155 ../lib/MeoReader/Backend/AddFeed.php:155
+msgctxt "error message"
+msgid "You are already subscribing to this feed"
+msgstr "You are already subscribing to this feed"
+
+#: ../lib/MeoReader/Feeds.php:811
+msgctxt "error message"
+msgid "Invalid or Missing Feed URL"
+msgstr "Invalid or Missing Feed URL!"
+
+#: ../lib/MeoReader/Feeds.php:821
+msgctxt "error message"
+msgid "Your system does not allow you to load external files like RSS feeds!"
+msgstr "Your system does not allow you to load external files like RSS feeds!"
+
+#: ../lib/MeoReader/Feeds.php:846
+msgctxt "error message"
+msgid ""
+"Could not create an XML object from the feed. Maybe the feed is broken or "
+"not well-formed!"
+msgstr ""
+"Could not create an XML object from the feed. Maybe the feed is broken or "
+"not well-formed!"
+
+#: ../lib/MeoReader/Feeds.php:921
+msgctxt "error message"
+msgid "Timout error. Cannot reach targeted server!"
+msgstr "Timout error. Cannot reach targeted server!"
+
+#: ../lib/MeoReader/Feeds.php:974
+msgctxt "error message"
+msgid "Cannot read feed due some technical error."
+msgstr "Cannot read feed due some technical error!"
+
+#: ../lib/MeoReader/Feeds.php:1032
+msgctxt "error message"
+msgid "Cannot find Feed!"
+msgstr "Cannot find Feed!"
+
+#: ../lib/MeoReader/Feeds.php:1056
+msgctxt "error message"
+msgid "Cannot load Feed from URL"
+msgstr "Cannot load Feed from URL!"
+
+#: ../lib/MeoReader/Backend/AddFeed.php:86
+#: ../lib/MeoReader/Backend/AddFeed.php:103
+#: ../lib/MeoReader/Backend/AddFeed.php:114
+#: ../lib/MeoReader/Backend/AddFeed.php:123
+#: ../lib/MeoReader/Backend/moveFeed.php:82
+#: ../lib/MeoReader/Backend/moveFeed.php:99
+#: ../lib/MeoReader/Backend/moveFeed.php:113
+#: ../lib/MeoReader/Backend/moveFeed.php:124
+#: ../lib/MeoReader/Backend/RenameCategory.php:75
+#: ../lib/MeoReader/Backend/RenameCategory.php:109
+#: ../lib/MeoReader/Backend/RenameCategory.php:120
+#: ../templates/Backend/moveFeed.php:28
+#: ../templates/Backend/RenameCategory.php:12
+msgctxt "backlink"
+msgid "Back to the Subscription Management"
+msgstr "Back to the Subscription Management"
+
+#: ../lib/MeoReader/Backend/AddFeed.php:164
+msgctxt "error message"
+msgid "The feed has been added."
+msgstr "The feed has been added."
+
+#: ../lib/MeoReader/Backend/Archive.php:98
+msgctxt "headline"
+msgid "Archive"
+msgstr "Archive"
+
+#: ../lib/MeoReader/Backend/CreatePostFromEntry.php:59
+msgctxt "headline"
+msgid "Create Post From Entry"
+msgstr "Create Post From Entry"
+
+#: ../lib/MeoReader/Backend/CreatePostFromEntry.php:63
+#: ../lib/MeoReader/Backend/DeleteOldEntries.php:65
+#: ../lib/MeoReader/Backend/MarkAllAsRead.php:63
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:79
+#: ../templates/Backend/Search.php:2 ../templates/Backend/ViewEntry.php:10
+msgctxt "backlink"
+msgid "Back to the Index"
+msgstr "Back to the Index"
+
+#: ../lib/MeoReader/Backend/CreatePostFromEntry.php:81
+#: ../lib/MeoReader/Backend/DeleteOldEntries.php:88
+#: ../lib/MeoReader/Backend/MarkAllAsRead.php:80
+#: ../lib/MeoReader/Backend/moveFeed.php:97
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:96
+#: ../lib/MeoReader/Backend/RenameCategory.php:96
+#: ../lib/MeoReader/Backend/RenameCategory.php:158
+#: ../lib/MeoReader/Backend/ToggleArchive.php:108
+msgctxt "error message"
+msgid "You're not allowed to do that!"
+msgstr "You're not allowed to do that!"
+
+#: ../lib/MeoReader/Backend/CreatePostFromEntry.php:96
+msgctxt "error message"
+msgid "Post has been created"
+msgstr "Post has been created"
+
+#: ../lib/MeoReader/Backend/DeleteOldEntries.php:61
+msgctxt "headline"
+msgid "Delete Old Entries"
+msgstr "Delete Old Entries"
+
+#: ../lib/MeoReader/Backend/DeleteOldEntries.php:96
+msgctxt "error message"
+msgid "Could not delete old entries!"
+msgstr "Could not delete old entries!"
+
+#: ../lib/MeoReader/Backend/DeleteOldEntries.php:101
+msgctxt "error message"
+msgid "Old entries have been deleted."
+msgstr "Old entries have been deleted."
+
+#: ../lib/MeoReader/Backend/Help.php:51
+msgctxt "headline"
+msgid "Documentation"
+msgstr "Documentation"
+
+#: ../lib/MeoReader/Backend/MarkAllAsRead.php:59
+msgctxt "headline"
+msgid "Mark All Entries as <i>Read</i>"
+msgstr "Mark All Entries as <i>Read</i>"
+
+#: ../lib/MeoReader/Backend/MarkAllAsRead.php:88
+msgctxt "error message"
+msgid "Could not mark all entries as <i>read</i>"
+msgstr "Could not mark all entries as <i>read</i>"
+
+#: ../lib/MeoReader/Backend/MarkAllAsRead.php:93
+msgctxt "error message"
+msgid "All entries have been marked as <i>read</i>"
+msgstr "All entries have been marked as <i>read</i>"
+
+#: ../lib/MeoReader/Backend/moveFeed.php:172
+msgctxt "error message"
+msgid "The feed could not be moved!"
+msgstr "The feed could not be moved!"
+
+#: ../lib/MeoReader/Backend/moveFeed.php:181
+msgctxt "error message"
+msgid "The feed has been moved."
+msgstr "The feed has been moved."
+
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:75
+msgctxt "headline"
+msgid "Reload Feeds"
+msgstr "Reload Feeds"
+
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:105
+msgctxt "error message"
+msgid "There are no feeds to fetch!"
+msgstr "There are no feeds to fetch!"
+
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:124
+msgctxt "error message"
+msgid ""
+"Could not reload (all) feeds - Possibly due a PHP timeout! Please try again "
+"with Javascript enabled!"
+msgstr ""
+"Could not reload (all) feeds - Possibly due a PHP timeout! Please try again "
+"with Javascript enabled!"
+
+#: ../lib/MeoReader/Backend/ReloadFeeds.php:130
+msgctxt "error message"
+msgid "Feeds have been reloaded"
+msgstr "Feeds have been reloaded"
+
+#: ../lib/MeoReader/Backend/RenameCategory.php:167
+msgctxt "error message"
+msgid "The category could not be renamed!"
+msgstr "The category could not be renamed!"
+
+#: ../lib/MeoReader/Backend/RenameCategory.php:177
+msgctxt "error message"
+msgid "The category has been renamed."
+msgstr "The category has been renamed."
+
+#: ../lib/MeoReader/Backend/Search.php:92
+msgctxt "headline"
+msgid "Search Results"
+msgstr "Search Results"
+
+#: ../lib/MeoReader/Backend/Settings.php:61
+msgctxt "headline"
+msgid "Settings"
+msgstr "Settings"
+
+#: ../lib/MeoReader/Backend/Settings.php:77
+msgctxt "error message"
+msgid "Settings have been saved"
+msgstr "Settings have been saved"
+
+#: ../lib/MeoReader/Backend/Settings.php:82
+msgctxt "error message"
+msgid "The Settings could not be saved!"
+msgstr "The Settings could not be saved!"
+
+#: ../lib/MeoReader/Backend/Settings.php:223
+msgctxt "settings form"
+msgid "No single user allowed"
+msgstr "No single user allowed"
+
+#: ../lib/MeoReader/Backend/Settings.php:236
+msgctxt "settings form"
+msgid "Entries per page"
+msgstr "Entries per page"
+
+#: ../lib/MeoReader/Backend/Settings.php:243
+msgctxt "settings form"
+msgid "Delete entries older than"
+msgstr "Delete entries older than"
+
+#: ../lib/MeoReader/Backend/Settings.php:244
+msgctxt "settings form"
+msgid "Days"
+msgstr "Days"
+
+#: ../lib/MeoReader/Backend/Settings.php:250
+msgctxt "settings form"
+msgid "Timeout"
+msgstr "Timeout"
+
+#: ../lib/MeoReader/Backend/Settings.php:251
+msgctxt "settings form"
+msgid "Seconds to wait for a server response when fetching a feed"
+msgstr "Seconds to wait for a server response when fetching a feed"
+
+#: ../lib/MeoReader/Backend/Settings.php:257
+msgctxt "settings form"
+msgid "Allow Single User"
+msgstr "Allow Single User"
+
+#: ../lib/MeoReader/Backend/Settings.php:279
+msgctxt "settings form"
+msgid ""
+"to use <strong>the reader</strong> but not to manage subscriptions. This "
+"should not be an admininistrator!"
+msgstr ""
+"to use <strong>the reader</strong> but not to manage subscriptions. This "
+"should not be an admininistrator!"
+
+#: ../lib/MeoReader/Backend/Settings.php:286
+msgctxt "settings form"
+msgid "Twitter Handle"
+msgstr "Twitter Handle"
+
+#: ../lib/MeoReader/Backend/Settings.php:287
+msgctxt "settings form"
+msgid "Your username on Twitter"
+msgstr "Your username on Twitter"
+
+#: ../lib/MeoReader/Backend/Settings.php:287
+msgctxt "settings form"
+msgid "optional"
+msgstr "optional"
+
+#: ../lib/MeoReader/Backend/Settings.php:293
+msgctxt "settings form"
+msgid "Post Status"
+msgstr "Post Status"
+
+#: ../lib/MeoReader/Backend/Settings.php:313
+msgctxt "settings form"
+msgid "Status of posts that have been created from an entry."
+msgstr "Status of posts that have been created from an entry."
+
+#: ../lib/MeoReader/Backend/Settings.php:328
+msgctxt "settings form"
+msgid "Switch to the editor when creating a post from an entry"
+msgstr "Switch to the editor when creating a post from an entry"
+
+#: ../lib/MeoReader/Backend/Settings.php:344
+msgctxt "settings form"
+msgid "Allow <i>single user</i> to create posts from entries"
+msgstr "Allow <i>single user</i> to create posts from entries"
+
+#: ../lib/MeoReader/Backend/Settings.php:352
+msgctxt "settings form"
+msgid ""
+"If you want to import data from the Google Reader you need to enable the PHP "
+"function <i>zip_open</i> in your PHP.ini file first!"
+msgstr ""
+"If you want to import data from the Google Reader you need to enable the PHP "
+"function <i>zip_open</i> in your PHP.ini file first!"
+
+#: ../lib/MeoReader/Backend/Settings.php:367
+msgctxt "settings form"
+msgid ""
+"Show the <strong>Import Google Reader</strong> form on the <i>subscriptions</"
+"i> page"
+msgstr ""
+"Show the <strong>Import Google Reader</strong> form on the <i>subscriptions</"
+"i> page"
+
+#: ../lib/MeoReader/Backend/Settings.php:387
+msgctxt "settings form"
+msgid "Use http://anonym.to service for outgoing links"
+msgstr "Use http://anonym.to service for outgoing links"
+
+#: ../lib/MeoReader/Backend/Settings.php:403
+msgctxt "settings form"
+msgid "Show audio player for attached audio files"
+msgstr "Show audio player for attached audio files"
+
+#: ../lib/MeoReader/Backend/Settings.php:419
+msgctxt "settings form"
+msgid "Secure HTML output against certain XSS attack vectors"
+msgstr "Secure HTML output against certain XSS attack vectors"
+
+#: ../lib/MeoReader/Backend/Settings.php:427
+msgctxt "button label"
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: ../lib/MeoReader/Backend/Settings.php:434
+msgctxt "settings form"
+msgid ""
+"Has to be <strong>less than %maxTime%</strong> according to your server "
+"settings."
+msgstr ""
+"Has to be <strong>less than %maxTime%</strong> according to your server "
+"settings."
+
+#: ../lib/MeoReader/Backend/Settings.php:436
+msgctxt "setting_form"
+msgid ""
+"Securing HTML output makes a lot of sense but can be pretty slow! You have "
+"to make a choice here: Security or Performance"
+msgstr ""
+"Securing HTML output makes a lot of sense but can be pretty slow! You have "
+"to make a choice here: Security or Performance"
+
+#: ../lib/MeoReader/Backend/Subscriptions.php:79
+msgctxt "headline"
+msgid "Subscription Management"
+msgstr "Subscription Management"
+
+#: ../lib/MeoReader/Backend/Subscriptions.php:199
+msgctxt "error message"
+msgid "Could not create category!"
+msgstr "Could not create category!"
+
+#: ../lib/MeoReader/Backend/Subscriptions.php:237
+msgctxt "error message"
+msgid "The category has been deleted."
+msgstr "The category has been deleted."
+
+#: ../lib/MeoReader/Backend/Subscriptions.php:245
+msgctxt "error message"
+msgid "The category could not be deleted!"
+msgstr "The category could not be deleted!"
+
+#: ../lib/MeoReader/Backend/Subscriptions.php:276
+msgctxt "error message"
+msgid "The feed has been deleted."
+msgstr "The feed has been deleted."
+
+#: ../lib/MeoReader/Backend/Subscriptions.php:284
+msgctxt "error message"
+msgid "The feed could not be deleted!"
+msgstr "The feed could not be deleted!"
+
+#: ../lib/MeoReader/Backend/ToggleArchive.php:66
+msgctxt "headline"
+msgid "Toggle Archive Item"
+msgstr "Toggle Archive Item"
+
+#: ../lib/MeoReader/Backend/ToggleArchive.php:81
+msgctxt "error message"
+msgid "Back to the Archive"
+msgstr "Back to the Archive"
+
+#: ../lib/MeoReader/Backend/ToggleArchive.php:86
+msgctxt "error message"
+msgid "Back to the Index"
+msgstr "Back to the Index"
+
+#: ../lib/MeoReader/Backend/ToggleArchive.php:116
+msgctxt "error message"
+msgid "Could not change archive state for this entry!"
+msgstr "Could not change archive state for this entry!"
+
+#: ../lib/MeoReader/Backend/ToggleArchive.php:121
+msgctxt "error message"
+msgid "Archive state has been changed"
+msgstr "Archive state has been changed"
+
+#: ../lib/MeoReader/Import/MeoReader.php:41
+msgctxt "error message"
+msgid "No (valid) file to upload!"
+msgstr "No (valid) file to upload!"
+
+#: ../lib/MeoReader/Import/MeoReader.php:47
+msgctxt "error message"
+msgid "Invalid File Schema"
+msgstr "Invalid File Schema"
+
+#: ../lib/MeoReader/Import/MeoReader.php:56
+msgctxt "error message"
+msgid "Could not process XML file!"
+msgstr "The feed has an invaid URL"
+
+#: ../templates/Backend/Archive.php:30 ../templates/Backend/Index.php:104
+msgctxt "button label"
+msgid "Search"
+msgstr "Search"
+
+#: ../templates/Backend/Archive.php:155 ../templates/Backend/Index.php:245
+msgctxt "error message"
+msgid "No entries"
+msgstr "No entries"
+
+#: ../templates/Backend/Archive.php:171 ../templates/Backend/Index.php:261
+msgctxt "prevnext"
+msgid "Newer Entries"
+msgstr "Newer Entries"
+
+#: ../templates/Backend/Archive.php:177 ../templates/Backend/Index.php:267
+msgctxt "prevnext"
+msgid "Older Entries"
+msgstr "Older Entries"
+
+#: ../templates/Backend/Index.php:10 ../templates/Backend/Index.php:98
+msgctxt "tab title"
+msgid "All Time"
+msgstr "All Time"
+
+#: ../templates/Backend/Index.php:17 ../templates/Backend/Index.php:98
+msgctxt "tab title"
+msgid "Today"
+msgstr "Today"
+
+#: ../templates/Backend/Index.php:41
+msgctxt "tab"
+msgid "All Categories"
+msgstr "All Categories"
+
+#: ../templates/Backend/Index.php:86
+msgctxt "tab title"
+msgid "Check for new entries"
+msgstr "Check for new entries"
+
+#: ../templates/Backend/Index.php:86
+msgctxt "tab"
+msgid "Refresh"
+msgstr "Refresh"
+
+#: ../templates/Backend/Index.php:87
+msgctxt "tab title"
+msgid "All Categories"
+msgstr "All Categories"
+
+#: ../templates/Backend/Index.php:92
+msgctxt "tab title"
+msgid "Unread Entries (Current Category / All)"
+msgstr "Unread Entries (Current Category / All)"
+
+#: ../templates/Backend/Index.php:95
+msgctxt "tab"
+msgid "Mark All as Read"
+msgstr "Mark All As Read"
+
+#: ../templates/Backend/Index.php:170
+msgctxt "tab title"
+msgid "Add to Archive"
+msgstr "Add to Archive"
+
+#: ../templates/Backend/Index.php:171
+msgctxt "tab title"
+msgid "Toggle Read/Unread Status"
+msgstr "Toggle Read/Unread Status"
+
+#: ../templates/Backend/moveFeed.php:1
+msgctxt "headline"
+msgid "Move Feed"
+msgstr "Move Feed"
+
+#: ../templates/Backend/moveFeed.php:6
+msgctxt "move feed"
+msgid "Move"
+msgstr "Move"
+
+#: ../templates/Backend/moveFeed.php:6
+msgctxt "move feed"
+msgid "to"
+msgstr "to"
+
+#: ../templates/Backend/moveFeed.php:24
+msgctxt "button label"
+msgid "Move Feed"
+msgstr "Move Feed"
+
+#: ../templates/Backend/RenameCategory.php:1
+msgctxt "headline"
+msgid "Rename a Category"
+msgstr "Rename a Category"
+
+#: ../templates/Backend/RenameCategory.php:6
+msgctxt "rename category"
+msgid "Rename"
+msgstr "Rename"
+
+#: ../templates/Backend/RenameCategory.php:6
+msgctxt "rename category"
+msgid "to"
+msgstr "to"
+
+#: ../templates/Backend/RenameCategory.php:8
+msgctxt "button label"
+msgid "Rename Category"
+msgstr "Rename Category"
+
+#: ../templates/Backend/Search.php:8
+msgctxt "search"
+msgid "hit"
+msgstr "hit"
+
+#: ../templates/Backend/Search.php:13
+msgctxt "search"
+msgid "hits"
+msgstr "hits"
+
+#: ../templates/Backend/Search.php:17
+msgctxt "search"
+msgid "for"
+msgstr "for"
+
+#: ../templates/Backend/Search.php:110
+msgctxt "error message"
+msgid "No hits"
+msgstr "No hits"
+
+#: ../templates/Backend/Subscriptions.php:7
+msgctxt "add feed"
+msgid "Feed URL"
+msgstr "Feed URL"
+
+#: ../templates/Backend/Subscriptions.php:26
+msgctxt "button label"
+msgid "Add Feed"
+msgstr "Add Feed"
+
+#: ../templates/Backend/Subscriptions.php:32
+msgctxt "button label"
+msgid "Delete All Feeds"
+msgstr "Delete All Feeds"
+
+#: ../templates/Backend/Subscriptions.php:33
+msgctxt "button label"
+msgid "Delete All Categories"
+msgstr "Delete All Categories"
+
+#: ../templates/Backend/Subscriptions.php:62
+msgctxt "tab title"
+msgid "Delete this category"
+msgstr "Delete this category"
+
+#: ../templates/Backend/Subscriptions.php:62
+#: ../templates/Backend/Subscriptions.php:75
+msgctxt "tab"
+msgid "delete"
+msgstr "delete"
+
+#: ../templates/Backend/Subscriptions.php:66
+msgctxt "tab title"
+msgid "Rename this category"
+msgstr "Rename this category"
+
+#: ../templates/Backend/Subscriptions.php:66
+msgctxt "tab"
+msgid "rename"
+msgstr "rename"
+
+#: ../templates/Backend/Subscriptions.php:75
+msgctxt "tab title"
+msgid "Delete this feed"
+msgstr "Delete this feed"
+
+#: ../templates/Backend/Subscriptions.php:75
+msgctxt "tab"
+msgid "check"
+msgstr "check"
+
+#: ../templates/Backend/Subscriptions.php:75
+msgctxt "tab title"
+msgid "Move this feed into another category"
+msgstr "Move this feed into another category"
+
+#: ../templates/Backend/Subscriptions.php:75
+msgctxt "tab"
+msgid "move"
+msgstr "move"
+
+#: ../templates/Backend/Subscriptions.php:99
+msgctxt "error message"
+msgid "Currently there are no feeds assigned to that catgory"
+msgstr "Currently there are no feeds assigned to that catgory"
+
+#: ../templates/Backend/Subscriptions.php:117
+msgctxt "add category form"
+msgid "Category Name"
+msgstr "Category Name"
+
+#: ../templates/Backend/Subscriptions.php:119
+msgctxt "button label"
+msgid "Add Category"
+msgstr "Add Category"
+
+#: ../templates/Backend/Subscriptions.php:138
+msgctxt "export form"
+msgid "meoReader XML file"
+msgstr "meoReader XML file"
+
+#: ../templates/Backend/Subscriptions.php:142
+msgctxt "export form"
+msgid "OPML XML file"
+msgstr "OPML file"
+
+#: ../templates/Backend/Subscriptions.php:163
+msgctxt "import form"
+msgid "meoReader XML file"
+msgstr "meoReader XML file"
+
+#: ../templates/Backend/Subscriptions.php:165
+#: ../templates/Backend/Subscriptions.php:180
+#: ../templates/Backend/Subscriptions.php:198
+msgctxt "button label"
+msgid "Import"
+msgstr "Import"
+
+#: ../templates/Backend/Subscriptions.php:178
+msgctxt "import form"
+msgid "OPML XML file"
+msgstr "OPML file"
+
+#: ../templates/Backend/Subscriptions.php:196
+msgctxt "import form"
+msgid "Google Reader (Takeout) ZIP file"
+msgstr "Google Reader (Takeout) ZIP file"
+
+#: ../templates/Backend/ViewEntry.php:4
+msgctxt "backlink"
+msgid "Back to the Archive"
+msgstr "Back to the Archive"
+
+#: ../templates/Backend/ViewEntry.php:5
+msgctxt "tab"
+msgid "Remove from Archive"
+msgstr "Add to Archive"
+
+#: ../templates/Backend/ViewEntry.php:11
+msgctxt "tab"
+msgid "Add to Archive"
+msgstr "Add to Archive"
+
+#: ../templates/Backend/ViewEntry.php:17
+msgctxt "error message"
+msgid "Cannot find entry!"
+msgstr "Cannot find Feed!"
+
+#~ msgctxt "settings form"
+#~ msgid ""
+#~ "This user will be able to <strong>read</strong> and does not have to be "
+#~ "an admin."
+#~ msgstr ""
+#~ "This user will be able to <strong>read</strong> and does not have to be "
+#~ "an admin."
+
+#~ msgctxt "settings form"
+#~ msgid "Allow Google Reader Import"
+#~ msgstr "Allow Google Reader Import"
+
+#~ msgctxt "settings form"
+#~ msgid "Upload form will show up on the <i>Subscriptions</i> page"
+#~ msgstr "Upload form will show up on the <i>Subscriptions</i> page"
+
+#~ msgctxt "tab"
+#~ msgid "Delete Old Entries"
+#~ msgstr "Delete Old Entries"
+
+#~ msgid "You are already subscribing to this feed"
+#~ msgstr "You are already subscribing to this feed"
+
+#~ msgid "rename category"
+#~ msgstr "rename category"
+
+#~ msgid "Back to the Index"
+#~ msgstr "Back to the Index"
+
+#~ msgid "Back to the Subscription Management"
+#~ msgstr "Back to the Subscription Management"
+
+#~ msgid "No entries"
+#~ msgstr "No entries"
+
+#~ msgid "Newer Entries"
+#~ msgstr "Newer Entries"
+
+#~ msgid "Older Entries"
+#~ msgstr "Older Entries"
+
+#~ msgid "Missing or Invalid Parameter!"
+#~ msgstr "Missing or Invalid Parameter!"
+
+#~ msgid "You're not allowed to do that!"
+#~ msgstr "You're not allowed to do that!"
+
+#~ msgid "Could not delete old entries!"
+#~ msgstr "Could not delete old entries!"
+
+#~ msgid "Feed could not be added!"
+#~ msgstr "Feed could not be added!"
+
+#~ msgid "Depending on how many feeds you have, this might take a while"
+#~ msgstr "Depending on how many feeds you have, this might take a while"

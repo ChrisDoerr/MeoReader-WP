@@ -1,0 +1,110 @@
+@media all {
+  
+  #meoDocs {
+    color:            #000;
+    line-height:      1.5em;
+  }
+  #meoDocs p {
+    font-size:        1.15em !important;
+  }
+  
+  .meoDocs_clearAll {
+    clear:            both;
+    font:             0/0 a;
+    height:           0;
+    line-height:      0;
+    visibility:       none;
+  }
+
+  #meoDocs h3 {
+    font-size:        1.5em;
+  }
+
+}
+
+@media screen {
+
+  #meoDocs a:link,
+  #meoDocs a:active {
+    color:            #337ACC;
+    text-decoration:  none;
+    display:          inline-block;
+  }
+  #meoDocs a:visited {
+    color:            #9533CD;
+  }
+  #meoDocs a:hover {
+    text-decoration:  underline;
+  }
+  
+  #meoDocs_TableOfContents {
+    float:            left;
+    display:          inline-block;
+    margin:           0 2em 1em 0;
+  }
+  #meoDocs_TableOfContents ul {
+    list-style-type:  none;
+    margin:           0;
+    padding:          0.5em;
+    background-color: #F6F6F6;
+  }
+  #meoDocs_TableOfContents > ul {
+    display:          inline-block;
+  }
+  #meoDocs_TableOfContents ul ul {
+    margin-left:      1.5em;
+    padding:          0;
+    list-style-type:  none;
+  }
+  #meoDocs_TableOfContents li {
+    padding:          0;
+    margin:           0;
+  }
+  #meoDocs_TableOfContents ul li {
+    padding:          0;
+    margin:           0;
+  }
+  #meoDocs_TableOfContents .meoDocs_chapter_nr {
+    display:          inline-block;
+    padding-right:    0.5em;
+  }
+  .meoDocs_signature {
+    width:            auto;
+    text-align:       center;
+  }
+  .meoDocs_signature_name {
+    display:          block;
+    text-align:       center;
+    font-size:        1.25em;
+  }
+  .meoDocs_signature_ad {
+    display:          block;
+    text-align:       center;
+  }
+
+}
+
+@media print {
+  #meoDocs {
+    width:              100%;
+  }
+  
+  #meoDocs a:link,
+  #meoDocs a:active,
+  #meoDocs a:visited {
+    color:            #000;
+    text-decoration:  underline;
+    display:          inline-block;
+  }
+  #meoDocs_Content a:after {
+    content:          " (" attr(href) ") ";
+    font-size:        0.8em;
+    font-weight:      normal;
+  }
+  
+  #meoDocs_TableOfContents,
+  .meoDocs_signature {
+    display:          none;
+  }
+
+}

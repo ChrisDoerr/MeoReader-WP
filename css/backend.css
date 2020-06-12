@@ -1,0 +1,967 @@
+/**
+ * General
+ */
+#meoReader .clearAll,
+.meoReader_box .clearAll {
+  clear:              both;
+  height:             0;
+  content:            '';
+  font:               0/0 a;
+  line-height:        0;
+  visibility:         hidden;
+}
+
+/**
+ * List Normalization
+ */
+#meoReader ul {
+  display:            block;
+  list-style-type:    disc;
+  margin:             1em 0;
+  padding-left:       1em;
+}
+#meoReader ol {
+  display:            block;
+  list-style-type:    decimal;
+  margin:             1em 0;
+  padding-left:       1em;
+}
+#meoReader li {
+  display:            list-item;
+}
+#meoReader ul ul {
+  list-style-type:    circle;
+}
+#meoReader ul.square {
+  list-style-type:    square;
+}
+#meoReader ul.square ul {
+  list-style-type:    disc;
+}
+
+/**
+ * Prev/Next Pagination
+ */
+#MeoReader_Reader .prevNext {
+  display:            block;
+  margin:             1em auto;
+  width:              60%;
+}
+#MeoReader_Reader .prevNext .next {
+  float:              left;
+}
+#MeoReader_Reader .prevNext .prev {
+  float:              right;
+}
+
+/**
+ * Ajax loading animations
+ */
+#meoReader_loadingAnimation {
+  background:         transparent url('../images/loading_light.gif') center center no-repeat;
+  width:              20px;
+  height:             20px;
+  position:           absolute;
+  z-index:            10;
+  display:            none;
+}
+
+/**
+ * Messages
+ */
+#meoReader .message {
+  padding:            0.5em;
+  border-style:       solid;
+  border-width:       3px;
+  border-radius:      5px;
+}
+#meoReader .message.error {
+  border-color:       #CB2525;
+  color:              #CB2525;
+  background-color:   #FCEDED;
+}
+#meoReader .message.success {
+  border-color:       #028261;
+  color:              #000;
+  background-color:   #B2FEB7;
+}
+#meoReader th.success,
+#meoReader td.success {
+  color:              #000;
+  background-color:   #B2FEB7;
+}
+#meoReader th.error,
+#meoReader td.error {
+  color:              #CB2525;
+  background-color:   #FCEDED;
+}
+
+
+/**
+ * Backlink
+ */
+p.back {
+  margin-top:         3em;
+}
+
+/**
+ * Page Title
+ */
+#meoReader h2 {
+  display:      	    block;
+  border-bottom:      1px solid #000;
+  margin-bottom:      0;
+  padding-bottom:     0.15em;
+  font-size:          20pt;
+}
+#meoReader h2 span {
+  background-color:   #000;
+  color:              #EEE;
+  padding-left:       0.4em;
+  padding-right:      0.4em;
+  padding-bottom:     0.15em;
+}
+#meoReader h2 span.loading {
+  display:            inline-block;
+  background:         #000 url( '../images/loading_dark.gif' ) center center no-repeat;
+  text-indent:        -999em;
+  margin-bottom:      -5px;
+}
+#meoReader h3 {
+  font-size:          14pt;
+}
+#meoReader h3.admin {
+  padding-left:       0.5em;
+  border-left-width:  35px;
+  border-left-style:  solid;
+  border-left-color:  #A00;
+}
+
+/**
+ * Subscription List
+ */
+#meoReader h4.category {
+  padding:            0.25em 0.5em 0.25em 0;
+  font-size:          14pt;
+  font-weight:        normal;
+  text-shadow:        0px 1px 1px #FFF;
+  background-color:   #FFF;
+  color:              #757575;
+  filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec', GradientType=0 );
+  border:             1px solid #DFDFDF;
+}
+#meoReader h4.category label {
+  padding-left:         20px;
+}
+#meoReader h4.category label.loading {
+  background:           transparent url( '../images/loading_light.gif' ) 2px center no-repeat;
+}
+h4.category[data-cid="1"] {
+ border:              1px solid #8877AA !important;
+}
+#meoReader .feedItem {
+  line-height:        1.5em;
+  padding-left:       20px;
+  padding-right:      1em;
+  display:            block;
+  margin:             1em 0;
+}
+#meoReader .feedItem a.www {
+  background:         transparent url( '../images/sprites.gif' ) -5px -441px no-repeat;
+  padding-left:       12px;
+}
+#meoReader .feedItem a.rss,
+#meoReader label[for="meoReaderForm_AddFeed_url"] {
+  background:         transparent url( '../images/sprites.gif' ) -5px -579px no-repeat;
+  padding-left:       16px;
+}
+#meoReader label[for="meoReaderForm_AddCategory_name"] {
+  background:         transparent url( '../images/sprites.gif' ) -5px -648px no-repeat;
+  padding-left:       16px;
+}
+#meoReader .feedItem .name {
+  font-size:          14pt;
+  margin-bottom:      0.25em;
+}
+#meoReader .feedItem .name:hover {
+  background-color:   #D4D4CC;
+}
+#meoReader .feedItem .name span,
+#meoReader h4.category span {
+  float:              right;
+  padding-left:       2em;
+  font-size:          10pt;
+}
+#meoReader .feedItem a {
+  text-decoration:    none;
+}
+#meoReader .feedItem a:hover {
+  text-decoration:    underline;
+}
+#meoReader .feedItem .name a,
+#meoReader h4.category a {
+  color:              #C00;
+}
+#meoReader .feedItem .description {
+  padding:            0.25em 0;
+}
+/* iframe */
+#importFrame {
+  display:            none;
+}
+/* Import/Export only when JS enabeld! */
+#meoReader_ImportExport {
+  display:            none;
+}
+
+/**
+ * Subscription Forms
+ */
+form.meoReader_subscription,
+form.meoReader_edit {
+  display:            inline-block;
+  padding:            0.5em;
+  background-color:   #F5F5F5;
+}
+.meoReaderForm_wrapper {
+  display:            block;
+  margin:             1em 0;
+}
+#meoReader_ImportExport {
+  margin-top:         2em;
+  border-top:         1px solid #EEE;
+}
+#meoReader_ImportExport form {
+  background-color:   transparent;
+  margin:             0;
+}
+
+
+
+/**
+ * The MeoReader Box
+ */
+.meoReader_box {
+  position:           fixed;
+  left:               50%;
+  border:             1px solid #CCC;
+  width:              400px;
+  box-shadow:         0px 2px 3px #AAA;
+  display:            none;
+  z-index:            200;
+}
+.meoReader_box.error {
+  border:             1px solid #A00;
+  padding:            0;
+}
+.meoReader_box.success {
+  border:             1px solid #080;
+  padding:            0;
+}
+.meoReader_box .header {
+  display:            block;
+  background:         #4c4c4c;
+  background:         -moz-linear-gradient( top, #4c4c4c 0%, #131313 100% );
+  background:         -webkit-gradient( linear, left top, left bottom, color-stop( 0%, #4c4c4c ), color-stop( 100%, #131313 ) );
+  background:         -webkit-linear-gradient( top, #4c4c4c 0%, #131313 100% );
+  background:         -o-linear-gradient( top, #4c4c4c 0%, #131313 100% );
+  background:         -ms-linear-gradient( top, #4c4c4c 0%, #131313 100% );
+  background:         linear-gradient( to bottom, #4c4c4c 0%, #131313 100% );
+  filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+  color:              #FFF;
+  border-bottom:      1px solid #FFF;
+}
+.meoReader_box.error .header {
+  background:         rgb( 169, 3, 41 );
+  background:         -moz-linear-gradient( top, rgba( 169, 3, 41, 1 ) 0%, rgba( 143, 2, 34, 1 ) 44%, rgba( 109, 0, 25, 1 ) 100% );
+  background:         -webkit-gradient( linear, left top, left bottom, color-stop( 0%, rgba( 169, 3, 41, 1 ) ), color-stop( 44%, rgba( 143, 2, 34, 1 ) ), color-stop( 100%, rgba( 109, 0, 25, 1 ) ) );
+  background:         -webkit-linear-gradient( top, rgba( 169, 3, 41, 1 ) 0%, rgba( 143, 2, 34, 1 ) 44%, rgba( 109, 0, 25, 1 ) 100% );
+  background:         -o-linear-gradient( top, rgba( 169, 3, 41, 1 ) 0%,rgba( 143, 2, 34, 1 ) 44%, rgba( 109, 0, 25, 1 ) 100% );
+  background:         -ms-linear-gradient( top, rgba( 169, 3, 41, 1 ) 0%, rgba( 143, 2, 34, 1 ) 44%,rgba( 109, 0, 25, 1 ) 100% );
+  background:         linear-gradient( to bottom, rgba( 169, 3, 41, 1 ) 0%,rgba( 143, 2, 34, 1 ) 44%, rgba( 109, 0, 25, 1 ) 100% );
+  filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0 );
+  text-shadow:        1px 1px 0px #000;
+}
+.meoReader_box.success .header {
+  background:         rgb( 117, 178, 119);
+  background:         -moz-linear-gradient( top, rgba( 117, 178, 119, 1 ) 0%, rgba( 0, 138, 0, 1 ) 99% );
+  background:         -webkit-gradient( linear, left top, left bottom, color-stop( 0%, rgba( 117, 178, 119, 1 ) ), color-stop( 99%, rgba( 0, 138, 0, 1 ) ) );
+  background:         -webkit-linear-gradient( top, rgba( 117, 178, 119, 1 ) 0%,rgba( 0, 138, 0, 1 ) 99% );
+  background:         -o-linear-gradient( top, rgba( 117, 178, 119, 1 ) 0%, rgba( 0, 138, 0, 1 ) 99% );
+  background:         -ms-linear-gradient( top, rgba( 117, 178, 119, 1 ) 0%, rgba( 0, 138, 0, 1 ) 99% );
+  background:         linear-gradient( to bottom, rgba( 117, 178, 119, 1 ) 0%, rgba( 0, 138, 0, 1 ) 99% );
+  filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#75b277', endColorstr='#008a00', GradientType=0 );
+  text-shadow:        1px 1px 0px #000;
+}
+.meoReader_box .header h3 {
+  float:              left;
+  display:            inline-block;
+  padding:            0.25em 1em 0.25em 1.25em;
+  margin:             0;
+  font-weight:        normal;
+  color:              #FFF;
+}
+.meoReader_box .header h3.loading {
+  background:         transparent url( '../images/loading_dark.gif' ) 4px center no-repeat;
+}
+.meoReader_box .header a {
+  float:              right;
+  display:            inline-block;
+  padding:            0.25em 0.5em;
+  font-size:          14pt;
+  color:              #FFF;
+  text-decoration:    none;  
+  border-left:        1px solid #666;
+}
+.meoReader_box .header a:hover {
+  background-color:   #A00;
+}
+.meoReader_box.error .header a {
+  border-left:        1px solid #600;
+}
+.meoReader_box.error .header a:hover {
+  background:         transparent;
+}
+.meoReader_box.success .header a {
+  border-left:        1px solid #060;
+}
+.meoReader_box.success .header a:hover {
+  background:         transparent;
+}
+
+
+/**
+ * MeoReader Box: Body
+ */
+.meoReader_box .body {
+  padding:            1em 1.5em;
+  background-color:   #F5F5F5;
+}
+.meoReader_box .body p:first-child {
+  margin-top:         0;
+}
+
+
+/**
+ * MeoReader Box: Footer
+ */
+.meoReader_box .footer {
+  padding:            0.5em 1em;
+  background-color:   #F5F5F5;
+  text-align:         center;
+}
+.meoReader_box .footer a.btn {
+  background:         rgb( 238, 238, 238 );
+  background:         -moz-linear-gradient( top, rgba( 238, 238, 238, 1 ) 0%, rgba( 237, 237, 237, 1 ) 100% );
+  background:         -webkit-gradient( linear, left top, left bottom, color-stop( 0%, rgba( 238, 238, 238, 1 ) ), color-stop( 100%, rgba( 237, 237, 237, 1 ) ) );
+  background:         -webkit-linear-gradient( top, rgba( 238, 238, 238, 1 ) 0%,rgba( 237, 237, 237, 1 ) 100% );
+  background:         -o-linear-gradient( top, rgba( 238, 238, 238, 1 ) 0%,rgba( 237, 237, 237, 1 ) 100% );
+  background:         -ms-linear-gradient( top, rgba( 238, 238, 238, 1 ) 0%, rgba( 237, 237, 237, 1 ) 100% );
+  background:         linear-gradient( to bottom, rgba( 238, 238, 238, 1 ) 0%, rgba( 237, 237, 237, 1 ) 100% );
+  filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ededed', GradientType=0 );
+  color:              #000;
+  text-decoration:    none;
+  padding:            0.3em 2em;
+  font-size:          11pt;
+  text-shadow:        1px 1px 0px #EEE;
+  border:             1px solid #CCC;
+  border-radius:      5px;
+}
+.meoReader_box .footer a.btn:hover {
+  color:              #A00;
+  border:             1px solid #AAA;
+}
+.meoReader_box .footer a.cancel {
+  float:              left;
+  display:            inline-block;
+}
+.meoReader_box .footer a.ok {
+  float:              right;
+  display:            inline-block;
+  background: 	      rgb( 122, 188, 255 );
+  background:         -moz-linear-gradient( top, rgba( 122, 188, 255, 1 ) 0%, rgba( 96, 171, 248, 1 ) 44%, rgba( 64, 150, 238, 1 ) 100% );
+  background:         -webkit-gradient( linear, left top, left bottom, color-stop( 0%, rgba( 122, 188, 255, 1 ) ), color-stop( 44%, rgba( 96, 171, 248, 1 ) ), color-stop( 100%, rgba( 64, 150, 238, 1 ) ) );
+  background:         -webkit-linear-gradient( top, rgba( 122, 188, 255, 1 ) 0%, rgba( 96, 171, 248, 1 ) 44%, rgba( 64, 150, 238, 1 ) 100% );
+  background:         -o-linear-gradient( top, rgba( 122, 188, 255, 1 ) 0%, rgba( 96, 171, 248, 1 ) 44%, rgba( 64, 150, 238, 1 ) 100% );
+  background:         -ms-linear-gradient( top, rgba( 122, 188, 255, 1 ) 0%,rgba( 96, 171, 248, 1 ) 44%, rgba( 64, 150, 238, 1 ) 100% );
+  background: 	      linear-gradient( to bottom, rgba( 122, 188, 255, 1 ) 0%, rgba( 96, 171, 248, 1 ) 44%, rgba( 64, 150, 238, 1 ) 100% );
+  filter:             progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0 );
+  color:              #FFF;
+  text-shadow:        1px 1px #777;
+  border:             1px solid #FFF;
+}
+.meoReader_box .footer a.ok:hover {
+  text-shadow:        none;
+  border:             1px solid #777;
+  color:              #FFF;
+}
+.meoReader_box input[type="text"]:focus {
+  box-shadow:         0px 0px 2px #AAA;
+}
+.meoReader_box input[type="text"].long {
+  display:            block;
+  width:              97%;
+  margin:             0.25em;
+}
+
+
+/**
+ * Pseudo-Select-element
+ */
+.meoReader_box_select {
+  list-style-type:    none;
+  padding:            0;
+  box-shadow:         0px 1px 2px #CCC;
+}
+.meoReader_box_select li {
+  padding:            0.25em 0.5em;
+  background-color:   #FFF;
+  margin-bottom:      2px;
+  display:            none;
+}
+.meoReader_box_select li:hover {
+  background-color:   #5CADE6;
+  color:              #FFF;
+  cursor:             pointer;
+}
+.meoReader_box_select li.first {
+  background:         #E7E7E7 url('../images/selectArrow.png') 98% 60% no-repeat;
+  border:             1px solid #CCC;
+  color:              #777;
+  display:            block;
+}
+.meoReader_box_select li.first:hover {
+  background-color:   #E7E7E7;
+  border:             1px solid #BDBDBD;
+  color:              #777;
+}
+.meoReader_box_select li.first:hover a:hover {
+  color:              #777;
+}
+.meoReader_box_select a:hover {
+  color:              #FFF;
+}
+.meoReader_box_select a {
+  display:            block;
+  color:              #000;
+  text-decoration:    none;
+}
+
+
+.clearAll {
+  clear:          both;
+  content:        '';
+  font:           0/0 a;
+  visibility:     hidden;
+}
+
+#MeoReader_Reader_TopBar {
+  margin:           1em 0 4em;
+  display:          block;
+}
+
+
+
+#MeoReader_Reader_MastNav {
+  position:         absolute;
+}
+#MeoReader_Reader_MastNav ul,
+#MeoReader_Reader_MastNav ul ul,
+#MeoReader_Reader_MastNav ul li,
+#MeoReader_Reader_MastNav ul ul li {
+  list-style-type:  none;
+  margin:           0;
+  padding:          0;
+}
+#MeoReader_Reader_MastNav ul ul {
+  display:          none;
+}
+#MeoReader_Reader_MastNav ul li:hover > ul {
+  display:          block;
+}
+
+#MeoReader_Reader_MastNav ul {
+	position:         relative;
+	padding:          0;
+	list-style:       none;
+	display:          inline-table;
+}
+#MeoReader_Reader_MastNav ul li {
+  float:            left;
+  background-color: #FFF;
+}
+#MeoReader_Reader_MastNav ul li a {
+  padding:          0.25em 1em;
+  color:            #000;
+  text-shadow:      1px 1px 0px #FAFAFA;
+  text-decoration:  none;
+  display:          inline-block;
+}
+#MeoReader_Reader_MastNav ul li a:hover {
+  text-decoration:  underline;
+}
+#MeoReader_Reader_MastNav ul ul {
+  padding:          0;
+	position:         absolute;
+	top:              85%;
+}
+#MeoReader_Reader_MastNav ul ul li {
+  float:            none; 
+	position:         relative;
+  padding:          0.5em;
+}
+
+#MeoReader_Reader_MastNav > ul > li {
+  background:       rgb( 249, 249, 249 );
+  background:       -moz-linear-gradient( top, rgba( 249, 249, 249, 1 ) 0%, rgba( 236, 236, 236, 1 ) 100% );
+  background:       -webkit-gradient( linear, left top, left bottom, color-stop( 0%, rgba( 249, 249, 249, 1 ) ), color-stop( 100%, rgba( 236, 236, 236, 1 ) ) );
+  background:       -webkit-linear-gradient( top,  rgba( 249, 249, 249, 1 ) 0%, rgba( 236, 236, 236, 1 ) 100% );
+  background:       -o-linear-gradient( top, rgba( 249, 249, 249, 1 ) 0%, rgba( 236, 236, 236, 1 ) 100% );
+  background:       -ms-linear-gradient( top, rgba( 249, 249, 249, 1 ) 0%, rgba( 236, 236, 236, 1 ) 100% );
+  background:       linear-gradient( to bottom, rgba( 249, 249, 249, 1 ) 0%, rgba( 236, 236, 236, 1 ) 100% );
+  filter:           progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec', GradientType=0 );
+  border:           1px solid #DFDFDF;
+  border-radius:    5px;
+  margin-left:      0.5em;
+}
+#MeoReader_Reader_MastNav > ul > li.first {
+  margin-left:      0;
+}
+#MeoReader_Reader_MastNav ul ul {
+  box-shadow:       0px 2px 3px #AAA;
+}
+#MeoReader_Reader_MastNav ul ul > li {
+  border-bottom:    1px solid #EEE;
+  border-left:      1px solid #EEE;
+  border-right:     1px solid #EEE;
+}
+#MeoReader_Reader_MastNav a.none {
+  font-weight:      bold;
+  cursor:           default;
+}
+#MeoReader_Reader_MastNav a.none:hover {
+  text-decoration:  none;
+}
+
+.tab_reload a {
+  background:       transparent url('../images/sprites.gif') -6px -712px no-repeat;
+  margin-left:      5px;
+}
+.tab_markAsRead a {
+  background:       transparent url('../images/sprites.gif') -6px -92px no-repeat;
+  margin-left:      8px;
+}
+.tab_category > a {
+  background:       transparent url('../images/sprites.gif') -6px -160px no-repeat;
+  margin-left:      5px;
+}
+
+
+
+/* MeoReader Reader List */
+#MeoReader_Reader_List {
+  display:          block;
+  margin:           1em 0;
+}
+
+.MeoReader_Reader_item {
+  display:          block;
+  width:            100%;
+  border-top:       1px solid #FFF;
+  border-bottom:    1px solid #DDD;
+}
+.MeoReader_Reader_item_listView {
+  width:            100%;
+}
+.MeoReader_Reader_item.unread {
+  font-weight:      bold;
+  background-color: #FFF;
+}
+.MeoReader_Reader_item.read .MeoReader_Reader_item_listView {
+  background-color: #E0E0E0;
+}
+.MeoReader_Reader_action {
+  padding:          0.25em 0 0.25em 0.25em;
+  width:            50px;
+}
+.MeoReader_Reader_action a {
+  text-decoration:  none;
+}
+.MeoReader_Reader_action a.archive {
+  background-color: #CCC;
+  color:            #FFF;
+  font-size:        0.85em;
+  padding:          0 5px;
+  font-weight:      normal;
+  border:           1px solid #FAFAFA;
+  text-shadow:      1px 0px 0px #BBB;
+}
+.MeoReader_Reader_action a.archive.true {
+  background-color: #000;
+  text-shadow:      none;
+}
+.MeoReader_Reader_action a.read {
+  background-color: #AAA;
+  color:            #FFF;
+  font-size:        0.85em;
+  padding:          0 5px;
+  font-weight:      normal;
+  border:           1px solid #FAFAFA;
+  text-shadow:      none;
+}
+.MeoReader_Reader_action a.unread {
+  background-color: #CCC;
+  color:            #FFF;
+  font-size:        0.85em;
+  padding:          0 5px;
+  font-weight:      normal;
+  border:           1px solid #FAFAFA;
+  text-shadow:      none;
+}
+.MeoReader_Reader_feedName {
+  padding:          0.25em 0.5em;
+  width:            250px;
+  cursor:           pointer;
+}
+.MeoReader_Reader_item img.favicon {
+  margin-right:     0.15em;
+}
+.MeoReader_Reader_entryTitle  {
+  padding:          0.25em 1em 0.25em 0.5em;
+}
+.MeoReader_Reader_entryTitle a {
+  color:            #000;
+  text-decoration:  none;
+}
+.MeoReader_Reader_entryDateTime {
+  width:            180px;
+  padding:          0.25em 1em;
+  text-align:       center;
+  cursor:           pointer;
+}
+.MeoReader_Reader_content {
+  display:          none;
+  padding:          0.5em 1em;
+  border-left:      1px solid #CCC;
+  border-right:     1px solid #CCC;
+  border-bottom:    1px solid #CCC;
+  background-color: #FFF;
+}
+.MeoReader_Reader_content,
+.MeoReader_Reader_content p {
+  font-size:        11pt;
+  line-height:      1.5em;
+}
+.MeoReader_Reader_content img {
+  margin:           0.5em 0.5em 0.5em 0;
+}
+.MeoReader_Reader_content h3 a,
+.MeoReader_Reader_content h4 a {
+  text-decoration:  none;
+}
+.MeoReader_Reader_content h3 {
+  margin-top:       0;
+  margin-bottom:    0;
+  font-size:        1.25em;
+}
+.MeoReader_Reader_content h4 {
+  font-size:        1em;
+  font-weight:      normal;
+  margin-top:       0;
+}
+#MeoReader_Reader_viewEntry h2,
+#MeoReader_Reader_viewEntry h3,
+#MeoReader_Reader_viewEntry h4 {
+  border-left:      none;
+  padding-left:     0;
+}
+.MeoReader_Reader_media {
+  display:          inline-block;
+  list-style-type:  none;
+  padding:          0;
+  background-color: #EEE;
+}
+.MeoReader_Reader_media li {
+  list-style-type:  none;
+  padding:          0.5em 1em 0.5em 20px;
+}
+.MeoReader_Reader_media .audio {
+  background:       transparent url( '../images/sprites.gif' ) -4px -777px no-repeat;
+}
+.MeoReader_Reader_media .video {
+  background:       transparent url( '../images/sprites.gif' ) -4px -845px no-repeat;
+}
+#MeoReader_UpdateFeed_Progress .stack {
+  display:          block;
+  padding:          0.5em;
+  background-color: #EEA;
+}
+#MeoReader_UpdateFeed_Progress .feedName {
+  display:          block;
+  margin:           1.5em 0;
+  font-style:       italic;
+}
+/* The entry toolbar (links) */
+.meoReader_entryToolbar {
+  display:          block;
+  border-top:       1px solid #DDD;
+  padding:          1em 0 0.5em 0;
+}
+.meoReader_entryToolbar a {
+  border-radius:    1em !important;
+}
+.meoReader_entryToolbar a span {
+  display:          inline-block;
+}
+a.meoReader_createPostFromEntry span {
+  margin-right:     5px;
+  background:       transparent url('../../../../wp-admin/images/menu.png') -275px -36px no-repeat;
+  width:            18px;
+  height:           20px;
+}
+a.meoReader_shareEntryOnTwitter span {
+  font-weight:      bold;
+  font-size:        1.25em;
+  padding-right:    3px;
+  color:            #AAA;
+}
+a.meoReader_shareEntryOnFacebook span {
+  font-weight:      bold;
+  font-size:        1.25em;
+  padding-right:    2px;
+  color:            #AAA;
+}
+
+/**
+ * Settings form
+ */
+#MeoReaderSettingsForm .formItem {
+  margin:           1em 0;
+}
+#MeoReaderSettingsForm label,
+.meoReaderForm_left {
+  float:            left;
+  width:            200px;
+  text-align:       right;
+  padding-right:    1em;
+}
+#meoReaderSettingsForm input[type="text"],
+#meoReaderSettingsForm input[type="submit"],
+.meoReaderForm_right {
+  float:            left;
+}
+#meoReaderSettingsForm input[type="text"] {
+  width:            500px;
+}
+.meoReaderForm_right label {
+  float:            none !important;
+  width:            auto;
+  text-align:       left;
+  padding-right:    0;
+}
+#MeoReaderSettingsForm input[type="submit"] {
+  margin-top:       3em;
+}
+
+#meoReaderForm_importGoogleReader,
+#meoReaderForm_importMeoReader {
+  display:          inline-block;
+  margin:           1em 0 1em;
+}
+#meoReaderForm_importGoogleReader label,
+#meoReaderForm_importMeoReader label,
+#meoReaderForm_importOPML label {
+  padding-left:     16px;
+  background:       transparent url('../images/sprites.gif') -3px -303px no-repeat;
+}
+#meoReaderForm_exportData label {
+  padding-left:     16px;
+  background:       transparent url('../images/sprites.gif') -4px -235px no-repeat;
+}
+
+/**
+ * Search
+ */
+#MeoReader_Reader_SearchForm {
+  margin:           0;
+}
+#MeoReader_Reader_SearchForm input[type="text"]{
+  width:            280px;
+}
+#MeoReader_Reader_SearchForm input[type="submit"]{
+  font-size:        0.85em;
+  background:       transparent url('../images/sprites.gif') -5px -27px no-repeat;
+  padding:          0 1em 0 1.25em;
+  margin:           0 0.5em;
+  border:           0;
+  border-radius:    3px;
+  text-shadow:      1px 1px 1px #FFF;
+}
+#MeoReader_Reader_SearchForm input[type="submit"]:hover {
+  text-decoration:  underline;
+  cursor:           pointer;
+}
+#MeoReader_Reader .results {
+  font-style:       italic;
+  font-size:        1.5em;
+}
+.meoReader_searchResults .action {
+  cursor:           default;
+}
+
+
+/**
+ * Content Placeholders
+ */
+.meoReader_placeholderWrap > p {
+  background:       #FF0 url('../images/sprites.gif') 2px -365px no-repeat;
+  padding:          5px 1em 5px 25px;
+  display:          inline-block;
+  border:           1px solid #AA0;
+  border-radius:    5px;
+  color:            #550;
+}
+.meoReader_placeholderWrap > p:hover {
+  cursor:           pointer;
+  color:            #000;
+  text-decoration:  underline;
+}
+
+/* Subscriptions Page: Import/Export Area */
+#meoReader_toggleImportExportView {
+  margin:           2em 0;
+}
+#meoReader_ImportArea,
+#meoReader_ExportArea {
+  background-color: #FAFAFA;
+  padding:          1em;
+  box-shadow:       0px 2px 2px #AAA;
+  margin-bottom:    1em;
+}
+#meoReader_ImportArea h3,
+#meoReader_ExportArea h3 {
+  margin:           0;
+  border-bottom:    1px solid #CCC;
+  text-shadow:      1px 1px 0px #FFF;
+}
+#meoReaderForm_exportData ul,
+#meoReaderForm_importData ul {
+  list-style-type:  none;
+  margin:           0;
+  padding:          0;
+}
+#meoReaderForm_exportData li,
+#meoReaderForm_importData li {
+  padding:          0.5em 0;
+}
+#meoReader_subscriptionTopBar {
+}
+#meoReader_subscriptionTopBar ul {
+  float:            right;
+  margin:           0 1em 0 0;
+  list-style-type:  none;
+}
+#meoReader_subscriptionTopBar li {
+  display:          inline;
+}
+
+/* Keyboard Shortcuts */
+.MeoReader_Reader_item.current {
+  border:           1px dotted #000 !important;
+}
+
+
+/**
+ * Publishing Editor
+ */
+#MeoReaderPublishing th,
+#MeoReaderPublishing td {
+  vertical-align:   top;
+  font-weight:      normal;
+}
+#MeoReaderPublishing label {
+  display:          block;
+  text-align:       right;
+  padding-right:    1em;
+}
+#MeoReaderPublishing input[type="text"] {
+  width:            600px;
+  padding:          5px;
+  font:             inherit;
+}
+#MeoReaderPublishing textarea {
+  width:            600px;
+  height:           300px;
+  padding:          5px;
+  font:             inherit;
+}
+#MeoReaderPublishing_Doc ul {
+  margin:           0.5em 0 1.5em 0;
+  list-style:       none;
+}
+#MeoReaderPublishing_Doc li {
+  margin:           0;
+  padding:          5px 0;
+}
+
+
+@media only screen and (max-width: 939px) {
+
+  .MeoReader_Reader_feedName {
+    display:          none;
+  }
+  #MeoReader_Reader_SearchForm input[type="text"] {
+    width:            80% !important;
+  }
+  #MeoReader_Reader_MastNav {
+    position:         relative !important;
+  }
+  #MeoReader_Reader_MastNav ul,
+  #MeoReader_Reader_MastNav ul ul,
+  #MeoReader_Reader_MastNav li,
+  .tab_category {
+    display:          block;
+    width:            100%;
+  }
+  #MeoReader_Reader_MastNav ul ul {
+    box-shadow:       none !important;
+  }
+  #MeoReader_Reader_MastNav ul ul li {
+    display:          block;
+    width:            95% !important;
+  }
+  .tab_category > ul {
+    display:  	      block !imporant;
+    position:         relative !important;
+    box-shadow:       none;
+  }
+  .tab_category {
+    width:            100%;
+    margin:           0;
+  }
+  .tab_category li {
+    width:            99%;
+  }
+
+  #meoReaderForm_AddFeed label,
+  #meoReaderForm_AddFeed input[type="submit"],
+  #meoReaderForm_wrapper label,
+  #meoReaderForm_wrapper input[type="submit"] {
+    display:          block;
+    width:            100%;
+  }
+
+  #meoDocs_TableOfContents li li {
+    display:          none;
+  }
+  #meoDocs_TableOfContents {
+    clear:            both;
+    display:          block;
+    width:            100%;
+  }
+  #meoDocs_TableOfContents li {
+    font-size:        1.5em;
+    padding:          0.5em 0 !important;
+  }
+
+}
